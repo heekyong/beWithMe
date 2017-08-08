@@ -16,6 +16,7 @@
 		95E8E21E1F38590D001189C5 /* MainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */; };
 		95E8E2411F38634F001189C5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E23F1F38634F001189C5 /* MasterViewController.swift */; };
 		95E8E2421F38634F001189C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E2401F38634F001189C5 /* DetailViewController.swift */; };
+		ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B80121F396D8200AFB169 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListTableViewCell.swift; sourceTree = "<group>"; };
 		95E8E23F1F38634F001189C5 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		95E8E2401F38634F001189C5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ED2B80121F396D8200AFB169 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		95E8E1FB1F3855A1001189C5 = {
 			isa = PBXGroup;
 			children = (
+				ED2B80121F396D8200AFB169 /* MapViewController.swift */,
 				95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */,
 				95E8E21B1F385725001189C5 /* MainListViewController.swift */,
 				95E8E23F1F38634F001189C5 /* MasterViewController.swift */,
@@ -154,6 +157,7 @@
 				95E8E2421F38634F001189C5 /* DetailViewController.swift in Sources */,
 				95E8E21C1F385725001189C5 /* MainListViewController.swift in Sources */,
 				95E8E21E1F38590D001189C5 /* MainListTableViewCell.swift in Sources */,
+				ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +319,7 @@
 				95E8E2181F3855A1001189C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
