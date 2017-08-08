@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MapViewController.swift"
-            timestampString = "523861591.785625"
+            timestampString = "523873518.905338"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "setAnnotation(latitude:longitude:delta:title:subtitle:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,45 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MapViewController.swift"
-            timestampString = "523859850.447168"
+            timestampString = "523873518.905338"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "setAnnotation(latitude:longitude:delta:title:subtitle:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "________________Sample.MapViewController.locationManager (__ObjC.CLLocationManager, didUpdateLocations : Swift.Array&lt;__ObjC.CLLocation&gt;) -&gt; ()"
-                  moduleName = "&#x1109;&#x1175;&#x11b7;&#x1107;&#x116e;&#x1105;&#x1173;&#x11b7; &#x1106;&#x1169;&#x11a8;&#x1105;&#x1169;&#x11a8;_Sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cscoi010/Desktop/beWithMe/%E1%84%89%E1%85%B5%E1%86%B7%E1%84%87%E1%85%AE%E1%84%85%E1%85%B3%E1%86%B7%20%E1%84%86%E1%85%A9%E1%86%A8%E1%84%85%E1%85%A9%E1%86%A8_Sample/MapViewController.swift"
-                  timestampString = "523861853.947714"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "352">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "________________Sample.MapViewController.(locationManager (__ObjC.CLLocationManager, didUpdateLocations : Swift.Array&lt;__ObjC.CLLocation&gt;) -&gt; ()).(closure #1)"
-                  moduleName = "&#x1109;&#x1175;&#x11b7;&#x1107;&#x116e;&#x1105;&#x1173;&#x11b7; &#x1106;&#x1169;&#x11a8;&#x1105;&#x1169;&#x11a8;_Sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cscoi010/Desktop/beWithMe/%E1%84%89%E1%85%B5%E1%86%B7%E1%84%87%E1%85%AE%E1%84%85%E1%85%B3%E1%86%B7%20%E1%84%86%E1%85%A9%E1%86%A8%E1%84%85%E1%85%A9%E1%86%A8_Sample/MapViewController.swift"
-                  timestampString = "523861853.949187"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

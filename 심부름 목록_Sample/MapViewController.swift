@@ -35,15 +35,20 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func goLocation(latitude latitudeValue: CLLocationDegrees, longitude longitudeVale : CLLocationDegrees, delta span : Double) {
+    func goLocation(latitude latitudeValue: CLLocationDegrees, longitude longitudeVale : CLLocationDegrees, delta span : Double) -> CLLocationCoordinate2D {
         let pLocation = CLLocationCoordinate2DMake(latitudeValue, longitudeVale)
         let spanValue = MKCoordinateSpanMake(span, span)
         let pRegion = MKCoordinateRegionMake(pLocation, spanValue)
         myMap.setRegion(pRegion, animated: true)
+        return pLocation
     }
     
     func setAnnotation(latitude latitudeValue: CLLocationDegrees, longitude longitudeValue : CLLocationDegrees, delta span : Double, title strTitle: String, subtitle strsubtitle:String){
-
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = goLocation(latitude: latitudeValue, longitude: longitudeValue, delta: span)
+        annotation.title = strTitle
+        annotation.subtitle = strsubtitle
+        myMap.addAnnotation(annotation)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -75,6 +80,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     }
     @IBAction func sgChangeLocation(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            
+        } else if sender.selectedSegmentIndex == 1 {
+            setAnnotation(latitude: 37.590799, longitude: 127.02777730000003, delta: 1, title: "고려대학교 과학도서관", subtitle: "서울 성북구 인촌로22길, 6-7")
+            self.lblLocationInfo1.text = "보고 계신 위치"
+            self.lblLocationInfo2.text = "고려대학교"
+        } else if sender.selectedSegmentIndex == 2 {
+            setAnnotation(latitude: 37.590799, longitude: 127.02777730000003, delta: 1, title: "고려대학교 과학도서관", subtitle: "서울 성북구 인촌로22길, 6-7")
+            self.lblLocationInfo1.text = "보고 계신 위치"
+            self.lblLocationInfo2.text = "고려대학교"
+
+        }
     }
 
     /*
