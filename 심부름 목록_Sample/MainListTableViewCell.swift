@@ -10,6 +10,7 @@ import UIKit
 
 class MainListTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var TitleLabel: UILabel!
     
     //커스텀 셀 요소  아웃렛 연결
     

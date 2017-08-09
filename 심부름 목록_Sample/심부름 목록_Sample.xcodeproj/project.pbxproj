@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D6ADE9E1F3AE060002D5A0E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6ADE9D1F3AE060002D5A0E /* PostViewController.swift */; };
 		95E8E2081F3855A1001189C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E2071F3855A1001189C5 /* AppDelegate.swift */; };
 		95E8E20A1F3855A1001189C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E2091F3855A1001189C5 /* ViewController.swift */; };
 		95E8E20D1F3855A1001189C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E8E20B1F3855A1001189C5 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D6ADE9D1F3AE060002D5A0E /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = "심부름 목록_Sample/PostViewController.swift"; sourceTree = "<group>"; };
 		95E8E2041F3855A1001189C5 /* 심부름 목록_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "심부름 목록_Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E8E2071F3855A1001189C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E8E2091F3855A1001189C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				ED2B80121F396D8200AFB169 /* MapViewController.swift */,
+				8D6ADE9D1F3AE060002D5A0E /* PostViewController.swift */,
 				95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */,
 				95E8E21B1F385725001189C5 /* MainListViewController.swift */,
 				95E8E23F1F38634F001189C5 /* MasterViewController.swift */,
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6ADE9E1F3AE060002D5A0E /* PostViewController.swift in Sources */,
 				95E8E2411F38634F001189C5 /* MasterViewController.swift in Sources */,
 				95E8E20A1F3855A1001189C5 /* ViewController.swift in Sources */,
 				95E8E2081F3855A1001189C5 /* AppDelegate.swift in Sources */,

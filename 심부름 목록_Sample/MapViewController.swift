@@ -4,7 +4,7 @@
 //
 //  Created by cscoi010 on 2017. 8. 8..
 //  Copyright © 2017년 연습용. All rights reserved.
-//
+//  내 위치를 계산해서 나타내고, 심부름 위치를 설정하여 핀으로 꼽을 수 있습니다.
 
 import UIKit
 import MapKit
@@ -27,9 +27,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         myMap.showsUserLocation = true
         
+        //심부름1
         setAnnotation(latitude: 37.5863660, longitude: 127.0289090, delta: 1, title: "안암역", subtitle: "서울 성북구 안암동")
         self.lblLocationInfo1.text = "심부름 위치"
         self.lblLocationInfo2.text = "서울 성북구 안암동"
+        
+        //심부름2
+        setAnnotation(latitude: 37.5926340, longitude: 127.0249460, delta: 1, title: "화정체육관", subtitle: "서울 성북구 안암동")
+        //self.lblLocationInfo1.text = "심부름 위치"
+        //self.lblLocationInfo2.text = "서울 성북구 안암동"
 
         // Do any additional setup after loading the view.
     }
