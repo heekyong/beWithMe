@@ -26,6 +26,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         myMap.showsUserLocation = true
+        
+        setAnnotation(latitude: 37.5863660, longitude: 127.0289090, delta: 1, title: "안암역", subtitle: "서울 성북구 안암동")
+        self.lblLocationInfo1.text = "심부름 위치"
+        self.lblLocationInfo2.text = "서울 성북구 안암동"
 
         // Do any additional setup after loading the view.
     }
@@ -71,37 +75,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             address += pm!.thoroughfare!
             }
     
-            self.lblLocationInfo1.text = "현재 위치"
-            self.lblLocationInfo2.text = address
+            /*self.lblLocationInfo1.text = "현재 위치"
+            self.lblLocationInfo2.text = address*/
     
         })
     
         locationManager.stopUpdatingLocation()
     
     }
-    @IBAction func sgChangeLocation(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            
-        } else if sender.selectedSegmentIndex == 1 {
-            setAnnotation(latitude: 37.590799, longitude: 127.02777730000003, delta: 1, title: "고려대학교 과학도서관", subtitle: "서울 성북구 인촌로22길, 6-7")
-            self.lblLocationInfo1.text = "보고 계신 위치"
-            self.lblLocationInfo2.text = "고려대학교"
-        } else if sender.selectedSegmentIndex == 2 {
-            setAnnotation(latitude: 37.590799, longitude: 127.02777730000003, delta: 1, title: "고려대학교 과학도서관", subtitle: "서울 성북구 인촌로22길, 6-7")
-            self.lblLocationInfo1.text = "보고 계신 위치"
-            self.lblLocationInfo2.text = "고려대학교"
-
-        }
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

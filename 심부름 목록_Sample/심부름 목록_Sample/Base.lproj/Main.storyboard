@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="173"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EiB-35-cye" id="x8d-NG-zrN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="심부름 제목입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnw-cs-WUJ" userLabel="title text">
@@ -266,17 +266,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X7r-13-wuw">
-                                <rect key="frame" x="16" y="20" width="343" height="29"/>
-                                <segments>
-                                    <segment title="현재 위치"/>
-                                    <segment title="심부름위치"/>
-                                    <segment title="고려대학교"/>
-                                </segments>
-                                <connections>
-                                    <action selector="sgChangeLocation:" destination="pGt-aA-Xfm" eventType="valueChanged" id="QgZ-72-G2w"/>
-                                </connections>
-                            </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d58-r8-WqM">
                                 <rect key="frame" x="0.0" y="626" width="375" height="41"/>
                                 <subviews>
@@ -294,20 +283,26 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HuE-Vb-84e">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HuE-Vb-84e">
                                 <rect key="frame" x="0.0" y="56" width="375" height="562"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심부름 지도상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umt-Vo-SQJ">
+                                <rect key="frame" x="16" y="28" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="X7r-13-wuw" firstAttribute="leading" secondItem="ySv-2Q-X7H" secondAttribute="leadingMargin" id="5qp-bN-pll"/>
                             <constraint firstItem="HuE-Vb-84e" firstAttribute="leading" secondItem="ySv-2Q-X7H" secondAttribute="leading" id="8RS-Lr-oTW"/>
-                            <constraint firstItem="X7r-13-wuw" firstAttribute="trailing" secondItem="ySv-2Q-X7H" secondAttribute="trailingMargin" id="CQO-pq-rvq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Umt-Vo-SQJ" secondAttribute="trailing" id="DYC-bI-fpz"/>
                             <constraint firstItem="gz2-XX-lOh" firstAttribute="top" secondItem="d58-r8-WqM" secondAttribute="bottom" id="JaK-Bc-uQz"/>
                             <constraint firstItem="d58-r8-WqM" firstAttribute="top" secondItem="HuE-Vb-84e" secondAttribute="bottom" constant="8" id="LMP-9l-F0R"/>
-                            <constraint firstItem="HuE-Vb-84e" firstAttribute="top" secondItem="X7r-13-wuw" secondAttribute="bottom" constant="8" id="SwI-Px-d0L"/>
-                            <constraint firstItem="X7r-13-wuw" firstAttribute="top" secondItem="UFk-rf-MgD" secondAttribute="bottom" id="ert-Kt-c3j"/>
+                            <constraint firstItem="HuE-Vb-84e" firstAttribute="top" secondItem="Umt-Vo-SQJ" secondAttribute="bottom" constant="10" id="Odf-pf-D5z"/>
+                            <constraint firstItem="Umt-Vo-SQJ" firstAttribute="top" secondItem="UFk-rf-MgD" secondAttribute="bottom" constant="8" id="X7w-ax-VHS"/>
                             <constraint firstAttribute="trailing" secondItem="HuE-Vb-84e" secondAttribute="trailing" id="lgM-Ci-M9x"/>
+                            <constraint firstItem="Umt-Vo-SQJ" firstAttribute="leading" secondItem="ySv-2Q-X7H" secondAttribute="leadingMargin" id="sca-Ln-CW8"/>
                             <constraint firstItem="d58-r8-WqM" firstAttribute="leading" secondItem="ySv-2Q-X7H" secondAttribute="leading" id="wJp-fp-ZUS"/>
                             <constraint firstAttribute="trailing" secondItem="d58-r8-WqM" secondAttribute="trailing" id="xSa-eo-3j5"/>
                         </constraints>
