@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D6ADE9E1F3AE060002D5A0E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6ADE9D1F3AE060002D5A0E /* PostViewController.swift */; };
 		95E8E2081F3855A1001189C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E2071F3855A1001189C5 /* AppDelegate.swift */; };
 		95E8E20A1F3855A1001189C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E2091F3855A1001189C5 /* ViewController.swift */; };
 		95E8E20D1F3855A1001189C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E8E20B1F3855A1001189C5 /* Main.storyboard */; };
@@ -17,11 +16,13 @@
 		95E8E21E1F38590D001189C5 /* MainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */; };
 		95E8E2411F38634F001189C5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E23F1F38634F001189C5 /* MasterViewController.swift */; };
 		95E8E2421F38634F001189C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E2401F38634F001189C5 /* DetailViewController.swift */; };
+		E552DD9B1F3D6145008263EE /* PostModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552DD9A1F3D6145008263EE /* PostModalViewController.swift */; };
+		E552DD9D1F3D7014008263EE /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552DD9C1F3D7014008263EE /* SegmentViewController.swift */; };
+		E5F0D50F1F3C590F001AE002 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0D50E1F3C590F001AE002 /* PostViewController.swift */; };
 		ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B80121F396D8200AFB169 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D6ADE9D1F3AE060002D5A0E /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = "심부름 목록_Sample/PostViewController.swift"; sourceTree = "<group>"; };
 		95E8E2041F3855A1001189C5 /* 심부름 목록_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "심부름 목록_Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E8E2071F3855A1001189C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E8E2091F3855A1001189C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +34,9 @@
 		95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListTableViewCell.swift; sourceTree = "<group>"; };
 		95E8E23F1F38634F001189C5 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		95E8E2401F38634F001189C5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E552DD9A1F3D6145008263EE /* PostModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModalViewController.swift; sourceTree = "<group>"; };
+		E552DD9C1F3D7014008263EE /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
+		E5F0D50E1F3C590F001AE002 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ED2B80121F396D8200AFB169 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,10 +54,10 @@
 		95E8E1FB1F3855A1001189C5 = {
 			isa = PBXGroup;
 			children = (
-				ED2B80121F396D8200AFB169 /* MapViewController.swift */,
-				8D6ADE9D1F3AE060002D5A0E /* PostViewController.swift */,
-				95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */,
-				95E8E21B1F385725001189C5 /* MainListViewController.swift */,
+				E552DD9E1F3D7019008263EE /* Segment */,
+				E5F0D5111F3C5935001AE002 /* main */,
+				E5F0D5101F3C592A001AE002 /* post */,
+				E5F0D5121F3C594C001AE002 /* map */,
 				95E8E23F1F38634F001189C5 /* MasterViewController.swift */,
 				95E8E2401F38634F001189C5 /* DetailViewController.swift */,
 				95E8E2061F3855A1001189C5 /* 심부름 목록_Sample */,
@@ -80,6 +84,40 @@
 				95E8E2131F3855A1001189C5 /* Info.plist */,
 			);
 			path = "심부름 목록_Sample";
+			sourceTree = "<group>";
+		};
+		E552DD9E1F3D7019008263EE /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				E552DD9C1F3D7014008263EE /* SegmentViewController.swift */,
+			);
+			name = Segment;
+			sourceTree = "<group>";
+		};
+		E5F0D5101F3C592A001AE002 /* post */ = {
+			isa = PBXGroup;
+			children = (
+				E5F0D50E1F3C590F001AE002 /* PostViewController.swift */,
+				E552DD9A1F3D6145008263EE /* PostModalViewController.swift */,
+			);
+			name = post;
+			sourceTree = "<group>";
+		};
+		E5F0D5111F3C5935001AE002 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */,
+				95E8E21B1F385725001189C5 /* MainListViewController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		E5F0D5121F3C594C001AE002 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B80121F396D8200AFB169 /* MapViewController.swift */,
+			);
+			name = map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +192,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D6ADE9E1F3AE060002D5A0E /* PostViewController.swift in Sources */,
+				E5F0D50F1F3C590F001AE002 /* PostViewController.swift in Sources */,
+				E552DD9B1F3D6145008263EE /* PostModalViewController.swift in Sources */,
+				E552DD9D1F3D7014008263EE /* SegmentViewController.swift in Sources */,
 				95E8E2411F38634F001189C5 /* MasterViewController.swift in Sources */,
 				95E8E20A1F3855A1001189C5 /* ViewController.swift in Sources */,
 				95E8E2081F3855A1001189C5 /* AppDelegate.swift in Sources */,

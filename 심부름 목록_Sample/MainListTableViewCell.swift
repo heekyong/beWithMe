@@ -10,24 +10,18 @@ import UIKit
 
 class MainListTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var TitleLabel: UILabel!
-    
     //커스텀 셀 요소  아웃렛 연결
-    
-    @IBOutlet weak var questICON: UIImageView!
-    
-    @IBOutlet weak var mTitleLabel: UILabel!
-    
-    @IBOutlet weak var mDetailLabel: UILabel!
-    
-    @IBOutlet weak var levelRate: UIImageView!
-    
-    @IBOutlet weak var crediblityRate: UIImageView!
-    
-    @IBOutlet weak var peopleIcon: UIImageView!
-    
-    @IBOutlet weak var interested: UIImageView!
+//    @IBOutlet weak var questICON: UIImageView!
+//    @IBOutlet weak var mTitleLabel: UILabel!
+//    @IBOutlet weak var mDetailLabel: UILabel!
+//    @IBOutlet weak var levelRate: UIImageView!
+//    @IBOutlet weak var crediblityRate: UIImageView!
+//    @IBOutlet weak var peopleIcon: UIImageView!
+//    @IBOutlet weak var interested: UIImageView!
 
+    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var DetailLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

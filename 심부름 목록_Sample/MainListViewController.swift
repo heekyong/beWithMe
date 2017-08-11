@@ -9,61 +9,49 @@
 import UIKit
 
 class MainListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-// 소희님 코드 잠시 주석
-//    let simData = [ "Request 1", "Request 2", "Request 3", "Request 4"]
-//    let detailData = [ "texttext 1", "texttext 2", "texttext 3", "texttext 4" ]
-    
-    @IBAction func NewPostButton(_ sender: Any) {
-        UserDefaults.standard.set(-1, forKey: "PostNumber")
-    }
-    
-    var PostData = [String]()
-    
-    
+    var Title_Data = ["안암역 스타벅스 텀블러 구매대행 가능하신 분 ㅠㅠ","한자 필기 급구합니다"] //data = title
+    var Detail_Data = ["여친이 꼭 갖고싶다고 했던 스벅 텀블러가 내일 출시하는데요 내일 오전 9시에 급하게 일이 있어서 못갈 것 같네요 안암 사시는 분 좀 도와주세요","교내 한자시험 필기 구합니다 저번 시간에 못가서요 ㅠ"] //임의 추가
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//소희님 코드 잠시 주석
-//        return simData.count
         
-        PostData = UserDefaults.standard.object(forKey: "PostData") as? [String] ?? [String]()
-        return PostData.count
+        return Title_Data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-// 이전에 소희님이 작성하신 코드 잠시만 주석처리 해놨어욤
-//        let mCell = tableView.dequeueReusableCell(withIdentifier: "mainListCell", for: indexPath) as! MainListTableViewCell
-//        
-//        mCell.mTitleLabel.text = simData [indexPath.row]
-//        mCell.mDetailLabel.text = detailData [indexPath.row]
-//        
-//        //mainCell.<lable>.<text> = ㅇㅇㅇ + String(indexPath.row)
-//        return mCell
         
+        let Cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)  as! MainListTableViewCell
         
-        let Cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MainListTableViewCell
-        
-        PostData = UserDefaults.standard.object(forKey: "PostData") as? [String] ?? [String]()
-        Cell.TitleLabel.text = PostData[indexPath.row]
+        Cell.TitleLabel.text = Title_Data[indexPath.row]
+        Cell.DetailLabel.text = Detail_Data[indexPath.row] //적용 안되고 있음
         return Cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let PostNumber = indexPath.row
-        UserDefaults.standard.set(PostNumber, forKey: "PostNumber")
-        self.performSegue(withIdentifier: "ToPost", sender: self)
+        UserDefaults.standard.set(indexPath.row, forKey: "Order")
+        //memo와 연결
+        
+        performSegue(withIdentifier: "ToPost", sender: self)
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+                
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+//table view end
+
+    
+        
+    
+//action end
+
     
 
 }
