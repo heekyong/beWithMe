@@ -21,8 +21,9 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let Cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)  as! MainListTableViewCell
         
-        Cell.TitleLabel.text = Title_Data[indexPath.row]
+        Cell.TitleLabel.text = Title_Data[indexPath.row] //적용 안되고 있음
         Cell.DetailLabel.text = Detail_Data[indexPath.row] //적용 안되고 있음
+        //Cell.CategoryImage.image = UIImage(named: CategoryData[indexPath.row])
         return Cell
     }
     
@@ -31,14 +32,23 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         UserDefaults.standard.set(indexPath.row, forKey: "Order")
         //memo와 연결
         
-        performSegue(withIdentifier: "ToPost", sender: self)
+        //TOPOST 말고 detailview
+        performSegue(withIdentifier: "ToDetail", sender: self)
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-                
     }
 
     override func didReceiveMemoryWarning() {

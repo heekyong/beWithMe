@@ -18,9 +18,15 @@ class MainListTableViewCell: UITableViewCell {
 //    @IBOutlet weak var crediblityRate: UIImageView!
 //    @IBOutlet weak var peopleIcon: UIImageView!
 //    @IBOutlet weak var interested: UIImageView!
+    // TitleLabel
+    // DetailLabel
 
+    
     @IBOutlet weak var TitleLabel: UILabel!
     @IBOutlet weak var DetailLabel: UILabel!
+    
+    @IBOutlet weak var CategoryImage: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
