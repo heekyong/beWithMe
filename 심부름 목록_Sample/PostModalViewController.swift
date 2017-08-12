@@ -12,10 +12,14 @@ class PostModalViewController: UIViewController {
         let N_Title = ModalTitle.text
         let N_Content = ModalContent.text
         
-        let setting = UserDefaults.standard
-//        setting.set(N_Title, forkey:"Title")
-//        setting.set(N_Content, forkey:"Content") //왜 오류?
-//        setting.synchronize()
+        //모달에 쓰여진 값들을 유저디폴트에 저장하기
+        UserDefaults.standard.set(N_Title, forKey: "title")
+        UserDefaults.standard.set(N_Content, forKey: "content")
+        UserDefaults.standard.set("pointer", forKey: "category")//걍 임의로 포인터라고 지정함.
+        UserDefaults.standard.synchronize()
+        
+        self.dismiss(animated: true, completion: nil)
+        
         
     }
     override func viewDidLoad() {
@@ -25,8 +29,9 @@ class PostModalViewController: UIViewController {
 
     @IBAction func Cancel(_ sender: Any) {
         
-        self.dismiss(animated: true, completion: nil)
         //모달디스미스
+        self.dismiss(animated: true, completion: nil)
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

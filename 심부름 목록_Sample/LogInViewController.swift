@@ -15,9 +15,8 @@ class LogInViewController: UIViewController {
     
     @IBAction func LoadValue(_ sender: Any) {
         
-        let setting = UserDefaults.standard
-//        let N_ID = setting.set(NID, forkey:"ID")
-//        let N_PSW = setting.set(NPSW, forkey:"PSW")
+//        UserDefaults.standard.set(NID, forkey:"ID")
+//        UserDefaults.standard.set(NPSW, forkey:"PSW")
         //텍스트필드에 값 설정
 //        NID.text = N_ID
 //        NPSW.text = N_PSW
@@ -29,13 +28,12 @@ class LogInViewController: UIViewController {
 
         //텍스트필드 값 얻어서
 //        let N_ID = NID.text
-//        let N_PSW = NPSW.text
+//            let N_PSW = NPSW.text
         
         //유저디폴트에 저장
-        let setting = UserDefaults.standard
-//        setting.set(NID, forkey:"ID")
-//        setting.set(NPSW, forkey:"PSW") //지금 뭐하나 안써서 오류남
-        setting.synchronize()
+//        UserDefaults.standard.set(NID, forkey:"ID")
+ //       UserDefaults.standard.set(NPSW, forkey:"PSW")
+//        setting.synchronize()
 
     }
     

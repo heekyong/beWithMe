@@ -16,13 +16,18 @@ class MainListTableViewCell: UITableViewCell {
 //    @IBOutlet weak var mDetailLabel: UILabel!
 //    @IBOutlet weak var levelRate: UIImageView!
 //    @IBOutlet weak var crediblityRate: UIImageView!
-//    @IBOutlet weak var peopleIcon: UIImageView!
-//    @IBOutlet weak var interested: UIImageView!
+    //    @IBOutlet weak var peopleIcon: UIImageView!
+    //    @IBOutlet weak var interested: UIImageView!
     // TitleLabel
     // DetailLabel
 
+    @IBOutlet weak var LevelStarImage: UIImageView!
+
+    @IBOutlet weak var ConfidenceStarImage: UIImageView!
     
-    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var TitleLabel:
+        UILabel!
+    
     @IBOutlet weak var DetailLabel: UILabel!
     
     @IBOutlet weak var CategoryImage: UIImageView!

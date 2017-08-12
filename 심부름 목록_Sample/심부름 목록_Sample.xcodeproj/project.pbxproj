@@ -21,6 +21,8 @@
 		E552DDA01F3D807B008263EE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552DD9F1F3D807B008263EE /* LogInViewController.swift */; };
 		E552DDA21F3DA048008263EE /* MessageLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552DDA11F3DA048008263EE /* MessageLoginViewController.swift */; };
 		E552DDA61F3DA1CA008263EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E552DDA51F3DA1CA008263EE /* GoogleService-Info.plist */; };
+		E5545D6D1F3EDF7F0064407B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */; };
+		E5545D6F1F3EF0E00064407B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5545D6E1F3EF0E00064407B /* CategoryViewController.swift */; };
 		E5F0D50F1F3C590F001AE002 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0D50E1F3C590F001AE002 /* PostViewController.swift */; };
 		ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B80121F396D8200AFB169 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		E552DD9F1F3D807B008263EE /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E552DDA11F3DA048008263EE /* MessageLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageLoginViewController.swift; sourceTree = "<group>"; };
 		E552DDA51F3DA1CA008263EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5545D6E1F3EF0E00064407B /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E5F0D50E1F3C590F001AE002 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ED2B80121F396D8200AFB169 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +64,7 @@
 		95E8E1FB1F3855A1001189C5 = {
 			isa = PBXGroup;
 			children = (
+				E5545D691F3ECDF80064407B /* Category */,
 				E552DDA31F3DA04D008263EE /* message */,
 				E552DDA41F3DA05F008263EE /* login */,
 				E552DD9E1F3D7019008263EE /* Segment */,
@@ -117,6 +122,15 @@
 				E552DD9F1F3D807B008263EE /* LogInViewController.swift */,
 			);
 			name = login;
+			sourceTree = "<group>";
+		};
+		E5545D691F3ECDF80064407B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E5545D6E1F3EF0E00064407B /* CategoryViewController.swift */,
+				E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 		E5F0D5101F3C592A001AE002 /* post */ = {
@@ -228,7 +242,9 @@
 				95E8E2081F3855A1001189C5 /* AppDelegate.swift in Sources */,
 				95E8E2421F38634F001189C5 /* DetailViewController.swift in Sources */,
 				95E8E21C1F385725001189C5 /* MainListViewController.swift in Sources */,
+				E5545D6F1F3EF0E00064407B /* CategoryViewController.swift in Sources */,
 				95E8E21E1F38590D001189C5 /* MainListTableViewCell.swift in Sources */,
+				E5545D6D1F3EDF7F0064407B /* CategoryCollectionViewCell.swift in Sources */,
 				ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
