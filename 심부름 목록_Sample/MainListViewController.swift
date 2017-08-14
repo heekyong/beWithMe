@@ -12,6 +12,7 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
     var Title_Data = ["안암역 스타벅스 텀블러 구매대행 가능하신 분 ㅠㅠ","한자 필기 급구합니다"] //data = title
     var Detail_Data = ["여친이 꼭 갖고싶다고 했던 스벅 텀블러가 내일 출시하는데요 내일 오전 9시에 급하게 일이 있어서 못갈 것 같네요 안암 사시는 분 좀 도와주세요","교내 한자시험 필기 구합니다 저번 시간에 못가서요 ㅠ"] //임의 추가
     var Category_Data = ["take-away-coffee","open-book"]
+    var Price_Data = ["3,000","10,000"]
     var Confidence_Data = ["별점3","별점4"] //작동 안함
     var Level_Data = ["별점3","별점4"] //작동 안함
     
@@ -29,19 +30,20 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         Cell.TitleLabel.text = Title_Data[indexPath.row]
         Cell.DetailLabel.text = Detail_Data[indexPath.row]
         Cell.CategoryImage.image = UIImage(named: Category_Data[indexPath.row])
-        Cell.ConfidenceStarImage.image = UIImage(named:"별점3")
+        Cell.PriceLabel.text = Price_Data[indexPath.row]
+        Cell.ConfidenceStarImage.image = UIImage(named: Confidence_Data[indexPath.row])//UIImage(named:"별점3")
             //별점추가도 넣어야함
              //UIImage(named: Confidence_Data[indexPath.row]) //작동안함
-        Cell.LevelStarImage.image =
-            UIImage(named:"별점4")
+        Cell.LevelStarImage.image = UIImage(named: Level_Data[indexPath.row])
+            //UIImage(named:"별점4")
             //UIImage(named: Level_Data[indexPath.row]) //작동안함
         return Cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        UserDefaults.standard.set(indexPath.row, forKey: "Order")
         //memo와 연결
+        UserDefaults.standard.set(indexPath.row, forKey: "Order")
         
         //TOPOST 말고 detailview
         //performSegue(withIdentifier: "ToDetail", sender: self)
@@ -78,10 +80,25 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
             Category_Data.append(Modal_Category as! String)
         }
         
+        if let Modal_Price = UserDefaults.standard.object(forKey: "price") {
+            Price_Data.append(Modal_Price as! String)
+        }
+        
+        if let Modal_Confidence = UserDefaults.standard.object(forKey: "confidence") {
+            Confidence_Data.append(Modal_Confidence as! String)
+        }
+        
+        if let Modal_Level = UserDefaults.standard.object(forKey: "level") {
+            Level_Data.append(Modal_Level as! String)
+        }
+        
         //유저디폴트의 값 삭제하기
         UserDefaults.standard.removeObject(forKey: "title")
         UserDefaults.standard.removeObject(forKey: "content")
         UserDefaults.standard.removeObject(forKey: "category")
+        UserDefaults.standard.removeObject(forKey: "price")
+        UserDefaults.standard.removeObject(forKey: "confidence")
+        UserDefaults.standard.removeObject(forKey: "level")
         
         
     }

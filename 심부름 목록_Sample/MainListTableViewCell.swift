@@ -32,6 +32,8 @@ class MainListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var CategoryImage: UIImageView!
     
+    @IBOutlet weak var PriceLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

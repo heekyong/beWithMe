@@ -640,12 +640,27 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-bX-5jo">
+                                <rect key="frame" x="124" y="617" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxk-ab-xSr">
+                                <rect key="frame" x="37" y="616" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="가격">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="ModalContent" destination="QfS-H5-T2U" id="qTt-AF-gfJ"/>
                         <outlet property="ModalImage" destination="iya-cR-mUF" id="D9H-UE-QEK"/>
+                        <outlet property="ModalPrice" destination="jTD-bX-5jo" id="pPy-4W-KMn"/>
                         <outlet property="ModalTitle" destination="wTb-8N-GUO" id="EbW-0n-kgj"/>
                     </connections>
                 </viewController>
@@ -868,7 +883,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="명 관심" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xra-MZ-Jct">
-                                                    <rect key="frame" x="272" y="6" width="36" height="14"/>
+                                                    <rect key="frame" x="272" y="9" width="36" height="14"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="11"/>
                                                     <color key="textColor" red="0.55169802904129028" green="0.58271247148513794" blue="0.67405503988265991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -882,20 +897,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rep-eU-9LK">
-                                                    <rect key="frame" x="19" y="17" width="73" height="21"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rep-eU-9LK">
+                                                    <rect key="frame" x="8" y="23" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WON" translatesAutoresizingMaskIntoConstraints="NO" id="GFW-PZ-TN5">
-                                                    <rect key="frame" x="85" y="6" width="14" height="10"/>
+                                                    <rect key="frame" x="85" y="6" width="14" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="14" id="Rea-UP-1p6"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J71-gi-p0l">
-                                                    <rect key="frame" x="262" y="1" width="10" height="24"/>
+                                                    <rect key="frame" x="262" y="6" width="10" height="19"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="20"/>
                                                     <color key="textColor" red="0.99202650785446167" green="0.62216180562973022" blue="0.16260728240013123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -970,6 +985,7 @@
                                             <outlet property="ConfidenceStarImage" destination="4nM-oW-mzl" id="MJ7-j1-rDe"/>
                                             <outlet property="DetailLabel" destination="AMH-AX-wyo" id="AQl-Cu-pCl"/>
                                             <outlet property="LevelStarImage" destination="uC3-MC-OCE" id="fUi-ec-hFP"/>
+                                            <outlet property="PriceLabel" destination="Rep-eU-9LK" id="u9D-Un-Ckv"/>
                                             <outlet property="TitleLabel" destination="pzd-qO-aaL" id="dMm-2s-bCF"/>
                                             <segue destination="Bog-T6-jsE" kind="show" identifier="ToDetail" id="XRM-ZK-oln"/>
                                         </connections>
@@ -998,7 +1014,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oU7-4N-taf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3303" y="1576"/>
+            <point key="canvasLocation" x="3301.5999999999999" y="1574.6626686656673"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Q6a-wz-aTH">

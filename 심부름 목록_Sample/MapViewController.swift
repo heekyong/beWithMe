@@ -77,9 +77,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         annotation.coordinate = goLocation(latitude: latitudeValue, longitude: longitudeValue, delta: span) //golocation 왜 안쓰이지?
         annotation.title = strTitle
         annotation.subtitle = strsubtitle
-        //let pinimage = UIImage(named: "Vector")
-        //annotation.imageName = pinimage
-        //annotation.imageName = "Vector" //이미지 추가 - 작동안됨
         
         //핀 셀렉될 때 밑에 표시해야함
         //self.lblLocationInfo1.text = strtasktitle
@@ -111,7 +108,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         return anView
     }
     
-    //이미지를 위한 펑션 추가해야됨 안되서 다 지움
     
     //핀이 선택되었을 때 하단의 라벨 : 심부름 이름과 내용 변경 - 나중에
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
