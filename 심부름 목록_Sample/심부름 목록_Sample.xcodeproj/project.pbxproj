@@ -16,6 +16,7 @@
 		95E8E21E1F38590D001189C5 /* MainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */; };
 		95E8E2411F38634F001189C5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E23F1F38634F001189C5 /* MasterViewController.swift */; };
 		95E8E2421F38634F001189C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E8E2401F38634F001189C5 /* DetailViewController.swift */; };
+		E54F09B21F4181A000927176 /* SegmentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54F09B11F4181A000927176 /* SegmentHistoryViewController.swift */; };
 		E552DD9B1F3D6145008263EE /* PostModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552DD9A1F3D6145008263EE /* PostModalViewController.swift */; };
 		E552DD9D1F3D7014008263EE /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552DD9C1F3D7014008263EE /* SegmentViewController.swift */; };
 		E552DDA01F3D807B008263EE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552DD9F1F3D807B008263EE /* LogInViewController.swift */; };
@@ -39,6 +40,7 @@
 		95E8E21D1F38590D001189C5 /* MainListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListTableViewCell.swift; sourceTree = "<group>"; };
 		95E8E23F1F38634F001189C5 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		95E8E2401F38634F001189C5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E54F09B11F4181A000927176 /* SegmentHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentHistoryViewController.swift; sourceTree = "<group>"; };
 		E552DD9A1F3D6145008263EE /* PostModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModalViewController.swift; sourceTree = "<group>"; };
 		E552DD9C1F3D7014008263EE /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		E552DD9F1F3D807B008263EE /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E552DD9C1F3D7014008263EE /* SegmentViewController.swift */,
+				E54F09B11F4181A000927176 /* SegmentHistoryViewController.swift */,
 			);
 			name = Segment;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				95E8E2421F38634F001189C5 /* DetailViewController.swift in Sources */,
 				95E8E21C1F385725001189C5 /* MainListViewController.swift in Sources */,
 				E5545D6F1F3EF0E00064407B /* CategoryViewController.swift in Sources */,
+				E54F09B21F4181A000927176 /* SegmentHistoryViewController.swift in Sources */,
 				95E8E21E1F38590D001189C5 /* MainListTableViewCell.swift in Sources */,
 				E5545D6D1F3EDF7F0064407B /* CategoryCollectionViewCell.swift in Sources */,
 				ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */,
