@@ -26,6 +26,11 @@ class PostViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func Cancel(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+
+    }
 
 
 

@@ -75,7 +75,7 @@
 				E5F0D5121F3C594C001AE002 /* map */,
 				95E8E23F1F38634F001189C5 /* MasterViewController.swift */,
 				95E8E2401F38634F001189C5 /* DetailViewController.swift */,
-				95E8E2061F3855A1001189C5 /* 심부름 목록_Sample */,
+				95E8E2061F3855A1001189C5 /* bul_Sample */,
 				95E8E2051F3855A1001189C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95E8E2061F3855A1001189C5 /* 심부름 목록_Sample */ = {
+		95E8E2061F3855A1001189C5 /* bul_Sample */ = {
 			isa = PBXGroup;
 			children = (
 				95E8E2071F3855A1001189C5 /* AppDelegate.swift */,
@@ -99,6 +99,7 @@
 				95E8E2101F3855A1001189C5 /* LaunchScreen.storyboard */,
 				95E8E2131F3855A1001189C5 /* Info.plist */,
 			);
+			name = bul_Sample;
 			path = "심부름 목록_Sample";
 			sourceTree = "<group>";
 		};

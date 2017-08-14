@@ -44,7 +44,7 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         //memo와 연결
         
         //TOPOST 말고 detailview
-        performSegue(withIdentifier: "ToDetail", sender: self)
+        //performSegue(withIdentifier: "ToDetail", sender: self)
         
     }
     

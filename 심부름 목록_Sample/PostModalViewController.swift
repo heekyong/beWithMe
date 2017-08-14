@@ -40,7 +40,6 @@ class PostModalViewController: UIViewController {
     }
 
     @IBAction func Cancel(_ sender: Any) {
-        
         //모달디스미스
         self.dismiss(animated: true, completion: nil)
         
