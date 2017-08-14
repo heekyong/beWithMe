@@ -29,8 +29,12 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         Cell.TitleLabel.text = Title_Data[indexPath.row]
         Cell.DetailLabel.text = Detail_Data[indexPath.row]
         Cell.CategoryImage.image = UIImage(named: Category_Data[indexPath.row])
-        //Cell.ConfidenceStarImage.image = UIImage(named: Confidence_Data[indexPath.row]) //작동안함
-        //Cell.LevelStarImage.image = UIImage(named: Level_Data[indexPath.row]) //작동안함
+        Cell.ConfidenceStarImage.image = UIImage(named:"별점3")
+            //별점추가도 넣어야함
+             //UIImage(named: Confidence_Data[indexPath.row]) //작동안함
+        Cell.LevelStarImage.image =
+            UIImage(named:"별점4")
+            //UIImage(named: Level_Data[indexPath.row]) //작동안함
         return Cell
     }
     

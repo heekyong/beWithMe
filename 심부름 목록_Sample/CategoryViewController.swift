@@ -27,15 +27,6 @@ class CategoryViewController: UIViewController, UICollectionViewDataSource, UICo
         return Category_Description.count
     }
     
-    // 4. Collection View에서 사용할 부가적인 메소드 정의
-    // 4.1. Ceollection View에서 각 Cell의 디자인을 정의할 메소드를 정의
-    // 이 Method는 UICollectionViewDelegateFlowLayout에 정의되어 있으므로 이 놈을 꼭 상속해야 한다.
-    //func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        
-        // 이 샘플에서는 Cell의 크기를 105x105로 지정한다. 
-        //return CGSizeMake(105, 105)
-    //}
-    
     
     //각각의 아이템에 뭐 넣을거니 - 셀 리턴
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -44,7 +35,7 @@ class CategoryViewController: UIViewController, UICollectionViewDataSource, UICo
         
         //이미지 삽입 - 이미지 크기는 안정해줌 정해야함.
         cell.Collection_Image.image = UIImage(named:Image_Name[indexPath.item])
-        //배경화면 투명
+        //배경화면 투명 구현해야됨
         //cell.backgroundColor?.cgColor = Default
         
         //cell이 선택된 경우
@@ -56,8 +47,9 @@ class CategoryViewController: UIViewController, UICollectionViewDataSource, UICo
             cell.layer.borderColor = grey.cgColor
             
             
-            //라벨 활성화는 어케하지...
+            //라벨 활성화
             cell.Collection_Label.text = Category_Description[indexPath.item]
+           
         }
         else
         {
@@ -65,7 +57,7 @@ class CategoryViewController: UIViewController, UICollectionViewDataSource, UICo
             cell.Collection_Label.text = ""
             //테두리 활성화 사라짐
             cell.layer.borderWidth = 0
-            //cell.layer.borderWidth.hidden = true
+            
         }
         
         //색깔설정
@@ -80,20 +72,12 @@ class CategoryViewController: UIViewController, UICollectionViewDataSource, UICo
     //콜렉션 셀 선택됨에 따라 라벨 나타나고, 테두리 구현
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         
-        //셀 선택될 때 라벨 나타내기
-        //let cell = Category_Collection.cellForItem(at: indexPath) as! CategoryCollectionViewCell
-        //let Category_Label = Category_Description[indexPath.item]
-        
-        //cell.Collection_Label.text = Category_Label
-        
-        //myLabel.hidden = true
-        
         selectedIndex = indexPath.item
         
         self.Category_Collection.reloadData()
         
         //collectionView.allowsMultipleSelection = false
-        
+    
         print("You selected cell #\(indexPath.item)!")
     }
     
@@ -122,12 +106,10 @@ class CategoryViewController: UIViewController, UICollectionViewDataSource, UICo
     
     @IBAction func Save(_ sender: Any) {
         
-        //이미지 이름을 유저디폴트 업데이트 하는 코드 넣어야함
-        
+        //이미지 이름을 유저디폴트에 업데이트
+        UserDefaults.standard.set(Image_Name[selectedIndex], forKey: "category")
         self.dismiss(animated: true, completion: nil)
     }
   
-    
-
     
 }
