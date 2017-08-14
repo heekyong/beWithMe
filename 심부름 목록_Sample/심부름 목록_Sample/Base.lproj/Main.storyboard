@@ -515,14 +515,14 @@
                                 <color key="textColor" red="0.64481100800000002" green="0.64481100800000002" blue="0.64481100800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LWS-D8-Brt" userLabel="hard">
-                                <rect key="frame" x="92" y="326" width="59" height="11"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="별점3" translatesAutoresizingMaskIntoConstraints="NO" id="LWS-D8-Brt" userLabel="hard">
+                                <rect key="frame" x="92" y="323" width="68" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="bpe-Cm-Wpi"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRO-O8-QyH" userLabel="hard">
-                                <rect key="frame" x="92" y="400" width="59" height="11"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="별점4" translatesAutoresizingMaskIntoConstraints="NO" id="sRO-O8-QyH" userLabel="hard">
+                                <rect key="frame" x="92" y="397" width="59" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="w78-qc-Jn5"/>
                                 </constraints>
@@ -551,7 +551,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ezk-yK-lJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4342" y="1180"/>
+            <point key="canvasLocation" x="4341.5" y="1179.5"/>
         </scene>
         <!--Post Modal View Controller-->
         <scene sceneID="IVe-PW-2N7">
@@ -848,6 +848,12 @@
                                                     <color key="textColor" red="0.64481100800000002" green="0.64481100800000002" blue="0.64481100800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="별점4" translatesAutoresizingMaskIntoConstraints="NO" id="4nM-oW-mzl" userLabel="user credibility">
+                                                    <rect key="frame" x="26" y="169" width="59" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="aAe-ny-36Q"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세부내용이 들어갑니다. 자세히 보려면 클릭" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMH-AX-wyo" userLabel="detail text">
                                                     <rect key="frame" x="100" y="67" width="233" height="54"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="10"/>
@@ -870,7 +876,7 @@
                                                     <color key="textColor" red="0.64481100800000002" green="0.64481100800000002" blue="0.64481100800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uC3-MC-OCE" userLabel="hard">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="별점3" translatesAutoresizingMaskIntoConstraints="NO" id="uC3-MC-OCE" userLabel="hard">
                                                     <rect key="frame" x="26" y="140" width="59" height="11"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="11" id="5rL-f8-swi"/>
@@ -904,13 +910,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WON" translatesAutoresizingMaskIntoConstraints="NO" id="GFW-PZ-TN5">
-                                                    <rect key="frame" x="85" y="6" width="14" height="15"/>
+                                                    <rect key="frame" x="85" y="6" width="14" height="14.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="14" id="Rea-UP-1p6"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J71-gi-p0l">
-                                                    <rect key="frame" x="262" y="6" width="10" height="19"/>
+                                                    <rect key="frame" x="262" y="5.5" width="10" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="20"/>
                                                     <color key="textColor" red="0.99202650785446167" green="0.62216180562973022" blue="0.16260728240013123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -921,18 +927,19 @@
                                                     <color key="textColor" red="0.60034340620040894" green="0.58428740501403809" blue="0.58405351638793945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.년 08월. 04일 08시 00분 ~  1시간 10분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLq-7S-yiY">
-                                                    <rect key="frame" x="113" y="140" width="181" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2017.년 08월. 04일 08시 00분 ~  1시간 10분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLq-7S-yiY">
+                                                    <rect key="frame" x="113" y="161" width="181" height="12"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4nM-oW-mzl" userLabel="user credibility">
-                                                    <rect key="frame" x="26" y="169" width="59" height="11"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="11" id="aAe-ny-36Q"/>
-                                                    </constraints>
-                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="마감 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxq-ie-DAG">
+                                                    <rect key="frame" x="183" y="146" width="41" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="11"/>
+                                                    <color key="textColor" red="0.55169802899999998" green="0.58271247150000005" blue="0.67405503990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4nM-oW-mzl" firstAttribute="leading" secondItem="KRu-Sl-ZfT" secondAttribute="leadingMargin" constant="18" id="0NI-ei-5zr"/>
@@ -1830,6 +1837,8 @@
         <image name="question" width="93" height="135"/>
         <image name="take-away-coffee" width="102" height="138"/>
         <image name="teacher-reading" width="135" height="126"/>
+        <image name="별점3" width="177" height="33"/>
+        <image name="별점4" width="144" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Mi2-mG-fpD"/>

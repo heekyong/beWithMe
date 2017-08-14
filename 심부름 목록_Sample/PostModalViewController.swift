@@ -23,7 +23,6 @@ class PostModalViewController: UIViewController {
         UserDefaults.standard.set(N_Price, forKey: "price")
         UserDefaults.standard.set(N_Confidence, forKey: "confidence")
         UserDefaults.standard.set(N_Level, forKey: "level")
-        //UserDefaults.standard.set("pointer", forKey: "category")//걍 임의로 포인터라고 지정함.
         UserDefaults.standard.synchronize()
         
         self.dismiss(animated: true, completion: nil)
