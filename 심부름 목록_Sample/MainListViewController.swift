@@ -15,6 +15,7 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
     var Price_Data = ["3,000","10,000"]
     var Confidence_Data = ["별점3","별점4"] //작동 안함
     var Level_Data = ["별점3","별점4"] //작동 안함
+
     
     @IBOutlet weak var MainTableView: UITableView!
     
@@ -37,6 +38,9 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         Cell.LevelStarImage.image = UIImage(named: Level_Data[indexPath.row])
             //UIImage(named:"별점4")
             //UIImage(named: Level_Data[indexPath.row]) //작동안함
+        
+        //하트버튼 체크
+        
         return Cell
     }
     
@@ -61,6 +65,7 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
     //뷰 컨트롤러가 생성될 때 한 번만 실행 따라서 초기화할 때 사용
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
     }
     
@@ -93,12 +98,12 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         }
         
         //유저디폴트의 값 삭제하기
-        UserDefaults.standard.removeObject(forKey: "title")
-        UserDefaults.standard.removeObject(forKey: "content")
-        UserDefaults.standard.removeObject(forKey: "category")
-        UserDefaults.standard.removeObject(forKey: "price")
-        UserDefaults.standard.removeObject(forKey: "confidence")
-        UserDefaults.standard.removeObject(forKey: "level")
+//        UserDefaults.standard.removeObject(forKey: "title")
+//        UserDefaults.standard.removeObject(forKey: "content")
+//        UserDefaults.standard.removeObject(forKey: "category")
+//        UserDefaults.standard.removeObject(forKey: "price")
+//        UserDefaults.standard.removeObject(forKey: "confidence")
+//        UserDefaults.standard.removeObject(forKey: "level")
         
         
     }
@@ -120,8 +125,4 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
     
         
     
-//action end
-
-    
-
 }

@@ -24,6 +24,7 @@
 		E552DDA61F3DA1CA008263EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E552DDA51F3DA1CA008263EE /* GoogleService-Info.plist */; };
 		E5545D6D1F3EDF7F0064407B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */; };
 		E5545D6F1F3EF0E00064407B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5545D6E1F3EF0E00064407B /* CategoryViewController.swift */; };
+		E566891D1F440516006A98EF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E566891C1F440516006A98EF /* CheckBox.swift */; };
 		E5F0D50F1F3C590F001AE002 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0D50E1F3C590F001AE002 /* PostViewController.swift */; };
 		ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B80121F396D8200AFB169 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		E552DDA51F3DA1CA008263EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5545D6E1F3EF0E00064407B /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E566891C1F440516006A98EF /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		E5F0D50E1F3C590F001AE002 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ED2B80121F396D8200AFB169 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 		95E8E1FB1F3855A1001189C5 = {
 			isa = PBXGroup;
 			children = (
+				E566891E1F440CE4006A98EF /* Button */,
 				E5545D691F3ECDF80064407B /* Category */,
 				E552DDA31F3DA04D008263EE /* message */,
 				E552DDA41F3DA05F008263EE /* login */,
@@ -135,6 +138,14 @@
 				E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		E566891E1F440CE4006A98EF /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				E566891C1F440516006A98EF /* CheckBox.swift */,
+			);
+			name = Button;
 			sourceTree = "<group>";
 		};
 		E5F0D5101F3C592A001AE002 /* post */ = {
@@ -236,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E566891D1F440516006A98EF /* CheckBox.swift in Sources */,
 				E552DDA21F3DA048008263EE /* MessageLoginViewController.swift in Sources */,
 				E5F0D50F1F3C590F001AE002 /* PostViewController.swift in Sources */,
 				E552DD9B1F3D6145008263EE /* PostModalViewController.swift in Sources */,

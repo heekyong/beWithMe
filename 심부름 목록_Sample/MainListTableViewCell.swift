@@ -34,6 +34,8 @@ class MainListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var PriceLabel: UILabel!
     
+    @IBOutlet weak var HeartButton: CheckBox!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,6 +46,11 @@ class MainListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func isClicked(_ sender: Any) {
+        print("button is \(HeartButton.isChecked)")
+        //HeartButton.setImage( UIImage(named: "heart_FULL"), for: UIControlState.normal)
     }
 
 }
