@@ -36,10 +36,28 @@ class MainListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var HeartButton: CheckBox!
     
+    @IBOutlet weak var InterestPeople: UILabel!
+    
+    @IBOutlet weak var WritingTime: UILabel!
+    
+    
+    // Bool property
+    var isChecked: Bool = false {
+        didSet{
+            if isChecked == true {
+                InterestPeople.text = "1"
+                
+            } else {
+                InterestPeople.text = "0"
+            }
+        }
+    }
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+//        HeartButton.addTarget(self, action:#selector(isClicked(_ sender: Any)), for: UIControlEvents.touchUpInside)
+        HeartButton.isChecked = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -50,7 +68,9 @@ class MainListTableViewCell: UITableViewCell {
     
     @IBAction func isClicked(_ sender: Any) {
         print("button is \(HeartButton.isChecked)")
-        //HeartButton.setImage( UIImage(named: "heart_FULL"), for: UIControlState.normal)
+        
+        isChecked = !isChecked
+        
+        //HeartButton.setImage( UIImage(named: "heart_FULL"), fo UIControlState.normal)
     }
-
 }

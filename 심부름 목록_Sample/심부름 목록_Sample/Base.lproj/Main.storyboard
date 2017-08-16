@@ -232,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="3358" y="36"/>
         </scene>
-        <!--Item-->
+        <!--별 일 목록-->
         <scene sceneID="5AB-iF-re3">
             <objects>
                 <viewController id="Rof-DI-6sl" customClass="SegmentViewController" customModule="________________Sample" customModuleProvider="target" sceneMemberID="viewController">
@@ -277,7 +277,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PKg-sI-eiv"/>
+                    <tabBarItem key="tabBarItem" title="별 일 목록" id="PKg-sI-eiv"/>
                     <connections>
                         <outlet property="SegMainTable" destination="4OK-DJ-6d7" id="1so-kY-SDs"/>
                         <outlet property="SegMapView" destination="Ocl-aL-Nl6" id="qmY-qF-Gzp"/>
@@ -319,7 +319,7 @@
             </objects>
             <point key="canvasLocation" x="2305" y="4307"/>
         </scene>
-        <!--Item-->
+        <!--히스토리-->
         <scene sceneID="OTJ-Jz-ZQY">
             <objects>
                 <viewController id="g0H-Kc-fez" customClass="SegmentHistoryViewController" customModule="________________Sample" customModuleProvider="target" sceneMemberID="viewController">
@@ -414,7 +414,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="X4r-AQ-11p"/>
+                    <tabBarItem key="tabBarItem" title="히스토리" id="X4r-AQ-11p"/>
                     <connections>
                         <outlet property="Seg30Table" destination="R5b-fI-3Yw" id="qAO-ni-aPQ"/>
                         <outlet property="Seg7Table" destination="R5b-fI-3Yw" id="fwF-7G-Oiw"/>
@@ -448,7 +448,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="별 일을 입력해주세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ETm-On-6WF">
-                                <rect key="frame" x="13" y="145" width="307" height="171"/>
+                                <rect key="frame" x="13" y="145" width="307" height="161"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -479,13 +479,13 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예상 난이도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODS-U2-83e">
-                                <rect key="frame" x="15" y="355" width="66" height="15"/>
+                                <rect key="frame" x="15" y="375" width="66" height="15"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="12"/>
                                 <color key="textColor" red="0.64481100800000002" green="0.64481100800000002" blue="0.64481100800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소요 시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-9L-ytv">
-                                <rect key="frame" x="15" y="385" width="66" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="소요 시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-9L-ytv">
+                                <rect key="frame" x="15" y="394" width="66" height="19"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="12"/>
                                 <color key="textColor" red="0.64481100800000002" green="0.64481100800000002" blue="0.64481100800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -497,26 +497,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="별점3" translatesAutoresizingMaskIntoConstraints="NO" id="LWS-D8-Brt" userLabel="hard">
-                                <rect key="frame" x="94" y="355" width="68" height="14"/>
+                                <rect key="frame" x="94" y="375" width="68" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="SHX-ZM-gFM"/>
                                     <constraint firstAttribute="height" constant="14" id="bpe-Cm-Wpi"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="별점4" translatesAutoresizingMaskIntoConstraints="NO" id="sRO-O8-QyH" userLabel="hard">
-                                <rect key="frame" x="99" y="418" width="59" height="14"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="dar-lh-bt1"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="별점4" translatesAutoresizingMaskIntoConstraints="NO" id="sRO-O8-QyH" userLabel="hard">
+                                <rect key="frame" x="94" y="418" width="68" height="14"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.년 08월. 04일 08시 00분 ~  1시간 10분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX1-um-ZlT">
-                                <rect key="frame" x="99" y="387" width="181" height="12"/>
+                                <rect key="frame" x="99" y="397" width="181" height="12"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0m-Cy-STg">
-                                <rect key="frame" x="87" y="324" width="75" height="21"/>
+                                <rect key="frame" x="87" y="355" width="75" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="3lH-0G-nCm"/>
                                     <constraint firstAttribute="height" constant="21" id="TMz-bm-kzv"/>
@@ -526,7 +523,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보상" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1G-un-u7C">
-                                <rect key="frame" x="16" y="328" width="81" height="15"/>
+                                <rect key="frame" x="16" y="358" width="66" height="15"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <color key="textColor" red="0.64481100800000002" green="0.64481100800000002" blue="0.64481100800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="작성시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEo-8t-4o0">
+                                <rect key="frame" x="15" y="336" width="66" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="haI-Wb-ulx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="12"/>
                                 <color key="textColor" red="0.64481100800000002" green="0.64481100800000002" blue="0.64481100800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -550,37 +556,52 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WON" translatesAutoresizingMaskIntoConstraints="NO" id="KoU-Jk-rRU">
-                                <rect key="frame" x="164" y="324" width="14" height="15"/>
+                                <rect key="frame" x="164" y="350" width="14" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="14" id="3i1-V2-N3N"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.년 08월. 04일 08시 00분 ~  1시간 10분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-H3-Xqe">
+                                <rect key="frame" x="94" y="336" width="181" height="12"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="w0m-Cy-STg" firstAttribute="top" secondItem="ETm-On-6WF" secondAttribute="bottom" constant="8" id="050-WM-Nsw"/>
+                            <constraint firstItem="w0m-Cy-STg" firstAttribute="top" secondItem="ETm-On-6WF" secondAttribute="bottom" constant="49" id="050-WM-Nsw"/>
                             <constraint firstItem="VnS-qe-buj" firstAttribute="leading" secondItem="0x0-c8-NkB" secondAttribute="trailing" constant="35" id="1pT-1V-4s6"/>
                             <constraint firstItem="w0m-Cy-STg" firstAttribute="baseline" secondItem="r1G-un-u7C" secondAttribute="baseline" id="2Af-bv-bCC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uxF-5d-PgY" secondAttribute="trailing" constant="114" id="2ud-qK-5c2"/>
-                            <constraint firstItem="sRO-O8-QyH" firstAttribute="leading" secondItem="TKC-uP-Rm8" secondAttribute="trailing" constant="18" id="8tf-P9-C2o"/>
+                            <constraint firstItem="dEo-8t-4o0" firstAttribute="leading" secondItem="ODS-U2-83e" secondAttribute="leading" id="3kC-f4-cLz"/>
                             <constraint firstItem="LWS-D8-Brt" firstAttribute="top" secondItem="ODS-U2-83e" secondAttribute="top" id="9y7-3x-Bxj"/>
-                            <constraint firstItem="gqk-mD-0Kg" firstAttribute="top" secondItem="FX1-um-ZlT" secondAttribute="bottom" constant="49" id="Aco-ra-ltF"/>
-                            <constraint firstItem="FX1-um-ZlT" firstAttribute="leading" secondItem="sRO-O8-QyH" secondAttribute="leading" id="BGB-6A-slF"/>
+                            <constraint firstItem="gqk-mD-0Kg" firstAttribute="top" secondItem="FX1-um-ZlT" secondAttribute="bottom" constant="39" id="Aco-ra-ltF"/>
+                            <constraint firstItem="sRO-O8-QyH" firstAttribute="leading" secondItem="bf2-H3-Xqe" secondAttribute="leading" id="B6N-it-Q97"/>
+                            <constraint firstItem="KoU-Jk-rRU" firstAttribute="top" secondItem="bf2-H3-Xqe" secondAttribute="bottom" constant="2" id="BjY-rs-NoP"/>
                             <constraint firstItem="0x0-c8-NkB" firstAttribute="leading" secondItem="7BI-8v-Z0S" secondAttribute="leadingMargin" constant="-3" id="CHE-w9-NQi"/>
+                            <constraint firstItem="r1G-un-u7C" firstAttribute="top" secondItem="dEo-8t-4o0" secondAttribute="bottom" constant="7" id="CPg-CM-yPQ"/>
                             <constraint firstItem="Obi-Ws-HpF" firstAttribute="leading" secondItem="7BI-8v-Z0S" secondAttribute="leadingMargin" constant="23" id="HdJ-8H-wKz"/>
+                            <constraint firstItem="sRO-O8-QyH" firstAttribute="leading" secondItem="LWS-D8-Brt" secondAttribute="leading" id="Hgf-Kh-Ybd"/>
                             <constraint firstItem="KoU-Jk-rRU" firstAttribute="leading" secondItem="w0m-Cy-STg" secondAttribute="trailing" constant="2" id="Kt7-ef-joL"/>
-                            <constraint firstItem="LWS-D8-Brt" firstAttribute="centerX" secondItem="sRO-O8-QyH" secondAttribute="centerX" id="Ngy-wF-jMj"/>
-                            <constraint firstItem="yf4-9L-ytv" firstAttribute="top" secondItem="ODS-U2-83e" secondAttribute="bottom" constant="15" id="Nhc-TB-RQT"/>
+                            <constraint firstItem="sRO-O8-QyH" firstAttribute="centerY" secondItem="TKC-uP-Rm8" secondAttribute="centerY" id="M7a-9B-XAl"/>
+                            <constraint firstItem="yf4-9L-ytv" firstAttribute="top" secondItem="ODS-U2-83e" secondAttribute="bottom" constant="4" id="Nhc-TB-RQT"/>
                             <constraint firstItem="0x0-c8-NkB" firstAttribute="leading" secondItem="5WC-Aa-Mae" secondAttribute="leading" id="Nr6-bs-hM9"/>
+                            <constraint firstItem="sRO-O8-QyH" firstAttribute="top" secondItem="TKC-uP-Rm8" secondAttribute="top" id="O2k-4r-1VW"/>
+                            <constraint firstItem="dEo-8t-4o0" firstAttribute="trailing" secondItem="ODS-U2-83e" secondAttribute="trailing" id="Pau-Mr-uJx"/>
                             <constraint firstAttribute="bottom" secondItem="gqk-mD-0Kg" secondAttribute="bottom" constant="20" symbolic="YES" id="PzU-01-MXH"/>
-                            <constraint firstItem="w0m-Cy-STg" firstAttribute="leading" secondItem="r1G-un-u7C" secondAttribute="trailing" constant="-10" id="QsR-3D-gtF"/>
+                            <constraint firstItem="sRO-O8-QyH" firstAttribute="trailing" secondItem="LWS-D8-Brt" secondAttribute="trailing" id="QCo-Sc-SgB"/>
+                            <constraint firstItem="w0m-Cy-STg" firstAttribute="leading" secondItem="r1G-un-u7C" secondAttribute="trailing" constant="5" id="QsR-3D-gtF"/>
                             <constraint firstItem="ETm-On-6WF" firstAttribute="centerX" secondItem="KoU-Jk-rRU" secondAttribute="centerX" constant="-4.5" id="R1i-cD-Pmo"/>
                             <constraint firstItem="ETm-On-6WF" firstAttribute="leading" secondItem="7BI-8v-Z0S" secondAttribute="leading" constant="13" id="Rgv-qg-R55"/>
                             <constraint firstItem="FX1-um-ZlT" firstAttribute="leading" secondItem="yf4-9L-ytv" secondAttribute="trailing" constant="18" id="Rjj-9Z-5DU"/>
+                            <constraint firstItem="sRO-O8-QyH" firstAttribute="top" secondItem="FX1-um-ZlT" secondAttribute="bottom" constant="9" id="Uka-x6-Lxq"/>
                             <constraint firstItem="LWS-D8-Brt" firstAttribute="leading" secondItem="ODS-U2-83e" secondAttribute="trailing" constant="13" id="W6x-pQ-C1f"/>
-                            <constraint firstItem="LWS-D8-Brt" firstAttribute="top" secondItem="KoU-Jk-rRU" secondAttribute="bottom" constant="16" id="YnW-yU-3Oy"/>
+                            <constraint firstItem="LWS-D8-Brt" firstAttribute="top" secondItem="KoU-Jk-rRU" secondAttribute="bottom" constant="10" id="YnW-yU-3Oy"/>
+                            <constraint firstItem="dEo-8t-4o0" firstAttribute="top" secondItem="bf2-H3-Xqe" secondAttribute="top" id="aAH-ah-jgY"/>
+                            <constraint firstItem="sRO-O8-QyH" firstAttribute="leading" secondItem="TKC-uP-Rm8" secondAttribute="trailing" constant="13" id="bJi-bW-1vg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FX1-um-ZlT" secondAttribute="trailing" constant="47" id="bQv-sC-Wni"/>
-                            <constraint firstItem="LWS-D8-Brt" firstAttribute="top" secondItem="w0m-Cy-STg" secondAttribute="bottom" constant="10" id="bua-Fu-x7w"/>
+                            <constraint firstItem="LWS-D8-Brt" firstAttribute="top" secondItem="w0m-Cy-STg" secondAttribute="bottom" constant="-1" id="bua-Fu-x7w"/>
                             <constraint firstItem="Obi-Ws-HpF" firstAttribute="top" secondItem="TKC-uP-Rm8" secondAttribute="bottom" constant="18" id="cdW-fc-jM7"/>
                             <constraint firstItem="LWS-D8-Brt" firstAttribute="leading" secondItem="7BI-8v-Z0S" secondAttribute="leading" constant="94" id="ce5-3y-cGu"/>
                             <constraint firstItem="0x0-c8-NkB" firstAttribute="top" secondItem="7BI-8v-Z0S" secondAttribute="top" constant="79" id="dhZ-yM-kgD"/>
@@ -588,11 +609,10 @@
                             <constraint firstItem="0x0-c8-NkB" firstAttribute="top" secondItem="uxF-5d-PgY" secondAttribute="bottom" constant="38" id="g38-00-4Ui"/>
                             <constraint firstItem="r1G-un-u7C" firstAttribute="leading" secondItem="7BI-8v-Z0S" secondAttribute="leadingMargin" id="g93-P5-WPO"/>
                             <constraint firstItem="ETm-On-6WF" firstAttribute="top" secondItem="VnS-qe-buj" secondAttribute="bottom" constant="15" id="glt-zh-PzW"/>
-                            <constraint firstItem="KoU-Jk-rRU" firstAttribute="top" secondItem="ETm-On-6WF" secondAttribute="bottom" constant="8" id="koi-Q5-Lzs"/>
-                            <constraint firstItem="FX1-um-ZlT" firstAttribute="top" secondItem="LWS-D8-Brt" secondAttribute="bottom" constant="18" id="lwO-ay-VDm"/>
+                            <constraint firstItem="KoU-Jk-rRU" firstAttribute="top" secondItem="ETm-On-6WF" secondAttribute="bottom" constant="44" id="koi-Q5-Lzs"/>
+                            <constraint firstItem="FX1-um-ZlT" firstAttribute="top" secondItem="LWS-D8-Brt" secondAttribute="bottom" constant="8" id="lwO-ay-VDm"/>
                             <constraint firstItem="0x0-c8-NkB" firstAttribute="top" secondItem="5WC-Aa-Mae" secondAttribute="bottom" constant="9" id="mE8-h8-LaU"/>
                             <constraint firstItem="yf4-9L-ytv" firstAttribute="leading" secondItem="TKC-uP-Rm8" secondAttribute="leading" id="mTy-OP-b6X"/>
-                            <constraint firstItem="sRO-O8-QyH" firstAttribute="top" secondItem="TKC-uP-Rm8" secondAttribute="top" id="pzm-Nk-0nr"/>
                             <constraint firstItem="ODS-U2-83e" firstAttribute="centerY" secondItem="LWS-D8-Brt" secondAttribute="centerY" id="qZa-QT-qLa"/>
                             <constraint firstItem="FX1-um-ZlT" firstAttribute="centerY" secondItem="yf4-9L-ytv" secondAttribute="centerY" id="qhO-AB-pL2"/>
                             <constraint firstItem="ETm-On-6WF" firstAttribute="top" secondItem="0x0-c8-NkB" secondAttribute="bottom" constant="19" id="r6g-aB-00J"/>
@@ -608,6 +628,7 @@
                         <outlet property="PostTextView" destination="ETm-On-6WF" id="kIB-Yl-B94"/>
                         <outlet property="PriceTextView" destination="w0m-Cy-STg" id="GST-bg-9LF"/>
                         <outlet property="TitleTextView" destination="0x0-c8-NkB" id="SLN-do-O62"/>
+                        <outlet property="WritingTimeTextView" destination="bf2-H3-Xqe" id="Mmj-k9-8b5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ezk-yK-lJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -715,12 +736,22 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-aW-sH7">
+                                <rect key="frame" x="121" y="505" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7W6-wt-Dgk" id="CHs-QA-tFg"/>
+                                    <outlet property="delegate" destination="7W6-wt-Dgk" id="Phn-NT-1BI"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="ModalContent" destination="QfS-H5-T2U" id="qTt-AF-gfJ"/>
                         <outlet property="ModalImage" destination="iya-cR-mUF" id="D9H-UE-QEK"/>
+                        <outlet property="ModalLevelPicker" destination="ROM-aW-sH7" id="Ydh-7w-fWs"/>
                         <outlet property="ModalPrice" destination="jTD-bX-5jo" id="pPy-4W-KMn"/>
                         <outlet property="ModalTitle" destination="wTb-8N-GUO" id="EbW-0n-kgj"/>
                     </connections>
@@ -944,7 +975,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="명 관심" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xra-MZ-Jct">
-                                                    <rect key="frame" x="272" y="9" width="32" height="14"/>
+                                                    <rect key="frame" x="274.5" y="9" width="32" height="14"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="11"/>
                                                     <color key="textColor" red="0.55169802904129028" green="0.58271247148513794" blue="0.67405503988265991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -961,15 +992,15 @@
                                                         <constraint firstAttribute="width" constant="14" id="Rea-UP-1p6"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J71-gi-p0l">
-                                                    <rect key="frame" x="262" y="6" width="10" height="19"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J71-gi-p0l">
+                                                    <rect key="frame" x="262" y="6" width="12.5" height="19"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="20"/>
                                                     <color key="textColor" red="0.99202650785446167" green="0.62216180562973022" blue="0.16260728240013123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017. 08. 03 15:38 작성 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXX-z1-eDy">
-                                                    <rect key="frame" x="100" y="120" width="71" height="21"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="7"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017. 08. 03 15:38  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXX-z1-eDy">
+                                                    <rect key="frame" x="100" y="120" width="83" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="10"/>
                                                     <color key="textColor" red="0.60034340620040894" green="0.58428740501403809" blue="0.58405351638793945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -991,7 +1022,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="heart _FILL"/>
                                                     <connections>
-                                                        <action selector="isClicked:" destination="krj-ZS-aon" eventType="touchUpInside" id="ccn-Fi-N3V"/>
+                                                        <action selector="isClicked:" destination="krj-ZS-aon" eventType="touchUpInside" id="4Rj-dY-ibk"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심부름 제목입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzd-qO-aaL" userLabel="title text">
@@ -1051,9 +1082,11 @@
                                             <outlet property="ConfidenceStarImage" destination="4nM-oW-mzl" id="MJ7-j1-rDe"/>
                                             <outlet property="DetailLabel" destination="AMH-AX-wyo" id="AQl-Cu-pCl"/>
                                             <outlet property="HeartButton" destination="kJA-qz-gck" id="DZN-3c-0EP"/>
+                                            <outlet property="InterestPeople" destination="J71-gi-p0l" id="eex-us-KGd"/>
                                             <outlet property="LevelStarImage" destination="uC3-MC-OCE" id="fUi-ec-hFP"/>
                                             <outlet property="PriceLabel" destination="Rep-eU-9LK" id="u9D-Un-Ckv"/>
                                             <outlet property="TitleLabel" destination="pzd-qO-aaL" id="dMm-2s-bCF"/>
+                                            <outlet property="WritingTime" destination="bXX-z1-eDy" id="skt-Tv-qbx"/>
                                             <segue destination="Bog-T6-jsE" kind="show" identifier="ToDetail" id="XRM-ZK-oln"/>
                                         </connections>
                                     </tableViewCell>

@@ -13,8 +13,9 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
     var Detail_Data = ["여친이 꼭 갖고싶다고 했던 스벅 텀블러가 내일 출시하는데요 내일 오전 9시에 급하게 일이 있어서 못갈 것 같네요 안암 사시는 분 좀 도와주세요","교내 한자시험 필기 구합니다 저번 시간에 못가서요 ㅠ"] //임의 추가
     var Category_Data = ["take-away-coffee","open-book"]
     var Price_Data = ["3,000","10,000"]
-    var Confidence_Data = ["별점3","별점4"] //작동 안함
-    var Level_Data = ["별점3","별점4"] //작동 안함
+    var Confidence_Data = ["star3","star4"] //작동 안함
+    var Level_Data = ["star3","star4","star3"] //작동 안함
+    var Writing_Time_Data = ["Aug 13, 2017. 11:34:23 AM  작성", "Aug 12, 2017. 2:41:33 PM  작성","Aug 10, 2017. 9:55:00 AM  작성"]
 
     
     @IBOutlet weak var MainTableView: UITableView!
@@ -38,7 +39,7 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         Cell.LevelStarImage.image = UIImage(named: Level_Data[indexPath.row])
             //UIImage(named:"별점4")
             //UIImage(named: Level_Data[indexPath.row]) //작동안함
-        
+        Cell.WritingTime.text = Writing_Time_Data[indexPath.row]
         //하트버튼 체크
         
         return Cell
@@ -74,27 +75,31 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         
         //유저디폴트가 nil이 아니라면 배열에 업데이트
         if let Modal_Title = UserDefaults.standard.object(forKey: "title") {
-            Title_Data.append(Modal_Title as! String)
+            Title_Data.insert(Modal_Title as! String, at: 0)
         }
         
         if let Modal_Content = UserDefaults.standard.object(forKey: "content") {
-            Detail_Data.append(Modal_Content as! String)
+            Detail_Data.insert(Modal_Content as! String, at: 0)
         }
         
         if let Modal_Category = UserDefaults.standard.object(forKey: "category") {
-            Category_Data.append(Modal_Category as! String)
+            Category_Data.insert(Modal_Category as! String, at: 0)
         }
         
         if let Modal_Price = UserDefaults.standard.object(forKey: "price") {
-            Price_Data.append(Modal_Price as! String)
+            Price_Data.insert(Modal_Price as! String, at: 0)
         }
         
         if let Modal_Confidence = UserDefaults.standard.object(forKey: "confidence") {
-            Confidence_Data.append(Modal_Confidence as! String)
+            Confidence_Data.insert(Modal_Confidence as! String, at: 0)
         }
         
         if let Modal_Level = UserDefaults.standard.object(forKey: "level") {
-            Level_Data.append(Modal_Level as! String)
+            Level_Data.insert(Modal_Level as! String, at: 0)
+        }
+        
+        if let Modal_Writing_Time = UserDefaults.standard.object(forKey: "writing_time") {
+            Writing_Time_Data.insert(Modal_Writing_Time as! String, at: 0)
         }
         
         //유저디폴트의 값 삭제하기

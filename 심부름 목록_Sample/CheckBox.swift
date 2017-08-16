@@ -15,11 +15,12 @@ class CheckBox: UIButton {
     let checkedImage = UIImage(named: "heart _FULL")//! as UIImage
     let uncheckedImage = UIImage(named: "heart _FILL")//! as UIImage
         
-        // Bool property
+        // Bool propert
     var isChecked: Bool = false {
         didSet{
             if isChecked == true {
                 self.setImage(checkedImage, for: UIControlState.normal)
+                
             } else {
                 self.setImage(uncheckedImage, for: UIControlState.normal)
             }

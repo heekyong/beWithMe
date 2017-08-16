@@ -9,14 +9,16 @@ class PostViewController: UIViewController {
     @IBOutlet weak var PriceTextView: UILabel!
     @IBOutlet weak var LevelStarImage: UIImageView!
     @IBOutlet weak var ConfidenceStarImage: UIImageView!
-    
+    @IBOutlet weak var WritingTimeTextView: UILabel!
     
     var Title_Data = ["안암역 스타벅스 텀블러 구매대행 가능하신 분 ㅠㅠ","한자 필기 급구합니다"] //임의 추가
     var Detail_Data = ["여친이 꼭 갖고싶다고 했던 스벅 텀블러가 내일 출시하는데요 내일 오전 9시에 급하게 일이 있어서 못갈 것 같네요 안암 사시는 분 좀 도와주세요","교내 한자시험 필기 구합니다 저번 시간에 못가서요 ㅠ"]
     var Category_Data = ["take-away-coffee","open-book"]
     var Price_Data = ["3,000","10,000"]
-    var Confidence_Data = ["별점3","별점4"] //작동 안함
-    var Level_Data = ["별점3","별점4"] //작동 안함
+    var Confidence_Data = ["star3","star4"] //작동 안함
+    var Level_Data = ["star3","star4"] //작동 안함
+    
+    var Writing_Time_Data = ["Aug 13, 2017. 11:34:23 AM  작성", "Aug 12, 2017. 2:41:33 PM  작성","Aug 10, 2017. 9:55:00 AM  작성"]
 
     //data 는 디테일
 
@@ -24,27 +26,31 @@ class PostViewController: UIViewController {
         
         //유저디폴트가 nil이 아니라면 배열에 업데이트
         if let Modal_Title = UserDefaults.standard.object(forKey: "title") {
-            Title_Data.append(Modal_Title as! String)
+            Title_Data.insert(Modal_Title as! String, at: 0)
         }
         
         if let Modal_Content = UserDefaults.standard.object(forKey: "content") {
-            Detail_Data.append(Modal_Content as! String)
+            Detail_Data.insert(Modal_Content as! String, at: 0)
         }
         
         if let Modal_Category = UserDefaults.standard.object(forKey: "category") {
-            Category_Data.append(Modal_Category as! String)
+            Category_Data.insert(Modal_Category as! String, at: 0)
         }
         
         if let Modal_Price = UserDefaults.standard.object(forKey: "price") {
-            Price_Data.append(Modal_Price as! String)
+            Price_Data.insert(Modal_Price as! String, at: 0)
         }
         
         if let Modal_Confidence = UserDefaults.standard.object(forKey: "confidence") {
-            Confidence_Data.append(Modal_Confidence as! String)
+            Confidence_Data.insert(Modal_Confidence as! String, at: 0)
         }
         
         if let Modal_Level = UserDefaults.standard.object(forKey: "level") {
-            Level_Data.append(Modal_Level as! String)
+            Level_Data.insert(Modal_Level as! String, at: 0)
+        }
+        
+        if let Modal_WritingTime = UserDefaults.standard.object(forKey: "writing_time") {
+            Writing_Time_Data.insert(Modal_WritingTime as! String, at: 0)
         }
 
         //유저디폴트의 값 삭제하기
@@ -54,6 +60,8 @@ class PostViewController: UIViewController {
         UserDefaults.standard.removeObject(forKey: "price")
         UserDefaults.standard.removeObject(forKey: "confidence")
         UserDefaults.standard.removeObject(forKey: "level")
+        UserDefaults.standard.removeObject(forKey: "writing_time")
+        
         
         let Order = UserDefaults.standard.object(forKey: "Order") as! Int
         //main의 order와 연결
@@ -64,6 +72,8 @@ class PostViewController: UIViewController {
         
         LevelStarImage.image = UIImage(named: Confidence_Data[Order])
         ConfidenceStarImage.image = UIImage(named: Level_Data[Order])
+        
+        WritingTimeTextView.text = Writing_Time_Data[Order]
 
         
     }
