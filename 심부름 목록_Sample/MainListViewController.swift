@@ -9,37 +9,30 @@
 import UIKit
 
 class MainListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-    var Title_Data = ["안암역 스타벅스 텀블러 구매대행 가능하신 분 ㅠㅠ","한자 필기 급구합니다"] //data = title
-    var Detail_Data = ["여친이 꼭 갖고싶다고 했던 스벅 텀블러가 내일 출시하는데요 내일 오전 9시에 급하게 일이 있어서 못갈 것 같네요 안암 사시는 분 좀 도와주세요","교내 한자시험 필기 구합니다 저번 시간에 못가서요 ㅠ"] //임의 추가
-    var Category_Data = ["take-away-coffee","open-book"]
-    var Price_Data = ["3,000","10,000"]
-    var Confidence_Data = ["star3","star4"] //작동 안함
-    var Level_Data = ["star3","star4","star3"] //작동 안함
-    var Writing_Time_Data = ["Aug 13, 2017. 11:34:23 AM  작성", "Aug 12, 2017. 2:41:33 PM  작성","Aug 10, 2017. 9:55:00 AM  작성"]
-
     
     @IBOutlet weak var MainTableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let appDele = UIApplication.shared.delegate as! AppDelegate
+        return appDele.todos.count
         
-        return Title_Data.count
+//        return Title_Data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let Cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)  as! MainListTableViewCell
         
-        Cell.TitleLabel.text = Title_Data[indexPath.row]
-        Cell.DetailLabel.text = Detail_Data[indexPath.row]
-        Cell.CategoryImage.image = UIImage(named: Category_Data[indexPath.row])
-        Cell.PriceLabel.text = Price_Data[indexPath.row]
-        Cell.ConfidenceStarImage.image = UIImage(named: Confidence_Data[indexPath.row])//UIImage(named:"별점3")
-            //별점추가도 넣어야함
-             //UIImage(named: Confidence_Data[indexPath.row]) //작동안함
-        Cell.LevelStarImage.image = UIImage(named: Level_Data[indexPath.row])
-            //UIImage(named:"별점4")
-            //UIImage(named: Level_Data[indexPath.row]) //작동안함
-        Cell.WritingTime.text = Writing_Time_Data[indexPath.row]
+        let appDele = UIApplication.shared.delegate as! AppDelegate
+        let todo = appDele.todos[indexPath.row]
+        
+        Cell.TitleLabel.text = todo.title
+        Cell.DetailLabel.text = todo.detail
+        Cell.CategoryImage.image = UIImage(named: todo.category)
+        Cell.PriceLabel.text = todo.price
+        Cell.ConfidenceStarImage.image = UIImage(named: todo.confidence)//작동안함
+        Cell.LevelStarImage.image = UIImage(named: todo.level)
+        Cell.WritingTime.text = todo.writing
         //하트버튼 체크
         
         return Cell
@@ -49,6 +42,7 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         
         //memo와 연결
         UserDefaults.standard.set(indexPath.row, forKey: "Order")
+        UserDefaults.standard.synchronize()
         
         //TOPOST 말고 detailview
         //performSegue(withIdentifier: "ToDetail", sender: self)
@@ -72,44 +66,6 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     //뷰 컨트롤러가 화면에 나타나기 직전에 실행
     override func viewWillAppear(_ animated: Bool) {
-        
-        //유저디폴트가 nil이 아니라면 배열에 업데이트
-        if let Modal_Title = UserDefaults.standard.object(forKey: "title") {
-            Title_Data.insert(Modal_Title as! String, at: 0)
-        }
-        
-        if let Modal_Content = UserDefaults.standard.object(forKey: "content") {
-            Detail_Data.insert(Modal_Content as! String, at: 0)
-        }
-        
-        if let Modal_Category = UserDefaults.standard.object(forKey: "category") {
-            Category_Data.insert(Modal_Category as! String, at: 0)
-        }
-        
-        if let Modal_Price = UserDefaults.standard.object(forKey: "price") {
-            Price_Data.insert(Modal_Price as! String, at: 0)
-        }
-        
-        if let Modal_Confidence = UserDefaults.standard.object(forKey: "confidence") {
-            Confidence_Data.insert(Modal_Confidence as! String, at: 0)
-        }
-        
-        if let Modal_Level = UserDefaults.standard.object(forKey: "level") {
-            Level_Data.insert(Modal_Level as! String, at: 0)
-        }
-        
-        if let Modal_Writing_Time = UserDefaults.standard.object(forKey: "writing_time") {
-            Writing_Time_Data.insert(Modal_Writing_Time as! String, at: 0)
-        }
-        
-        //유저디폴트의 값 삭제하기
-//        UserDefaults.standard.removeObject(forKey: "title")
-//        UserDefaults.standard.removeObject(forKey: "content")
-//        UserDefaults.standard.removeObject(forKey: "category")
-//        UserDefaults.standard.removeObject(forKey: "price")
-//        UserDefaults.standard.removeObject(forKey: "confidence")
-//        UserDefaults.standard.removeObject(forKey: "level")
-        
         
     }
     

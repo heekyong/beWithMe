@@ -106,8 +106,9 @@ class CategoryViewController: UIViewController, UICollectionViewDataSource, UICo
     
     @IBAction func Save(_ sender: Any) {
         
-        //이미지 이름을 유저디폴트에 업데이트
-        UserDefaults.standard.set(Image_Name[selectedIndex], forKey: "category")
+        //이미지 이름을 appdele에 업데이트
+        let appDele = UIApplication.shared.delegate as! AppDelegate
+        appDele.modal_category = Image_Name[selectedIndex]
         self.dismiss(animated: true, completion: nil)
     }
   

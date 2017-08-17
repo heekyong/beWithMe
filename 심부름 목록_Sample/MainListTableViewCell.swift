@@ -10,17 +10,6 @@ import UIKit
 
 class MainListTableViewCell: UITableViewCell {
     
-    //커스텀 셀 요소  아웃렛 연결
-//    @IBOutlet weak var questICON: UIImageView!
-//    @IBOutlet weak var mTitleLabel: UILabel!
-//    @IBOutlet weak var mDetailLabel: UILabel!
-//    @IBOutlet weak var levelRate: UIImageView!
-//    @IBOutlet weak var crediblityRate: UIImageView!
-    //    @IBOutlet weak var peopleIcon: UIImageView!
-    //    @IBOutlet weak var interested: UIImageView!
-    // TitleLabel
-    // DetailLabel
-
     @IBOutlet weak var LevelStarImage: UIImageView!
 
     @IBOutlet weak var ConfidenceStarImage: UIImageView!
@@ -56,14 +45,15 @@ class MainListTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        HeartButton.addTarget(self, action:#selector(isClicked(_ sender: Any)), for: UIControlEvents.touchUpInside)
+
         HeartButton.isChecked = false
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
     
     @IBAction func isClicked(_ sender: Any) {
@@ -71,6 +61,6 @@ class MainListTableViewCell: UITableViewCell {
         
         isChecked = !isChecked
         
-        //HeartButton.setImage( UIImage(named: "heart_FULL"), fo UIControlState.normal)
+        
     }
 }

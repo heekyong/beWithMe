@@ -9,10 +9,13 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var ModalContent: UITextView!
     @IBOutlet weak var ModalImage: UIImageView!
     @IBOutlet weak var ModalPrice: UITextField!
-    @IBOutlet weak var ModalLevelPicker: UIPickerView!
+    @IBOutlet weak var ModalTimePicker: UIPickerView!
+    @IBOutlet weak var ModalRatingControl: RatingControl!
     
-    //별점 선택 관련
-    var pickerDataSource = ["1점", "2점", "3점", "4점", "5점"];
+    
+    
+    //시간 선택 관련
+    var pickerDataSource = ["0분", "10분", "20분", "30분", "40분", "50분"];
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -22,14 +25,14 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
         return pickerDataSource.count;
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerDataSource[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-        let N_Level = pickerDataSource[row]
-        UserDefaults.standard.set(N_Level, forKey: "level")
+        //let N_Level = pickerDataSource[row]
+
     }
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
@@ -45,22 +48,19 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
         let N_Title = ModalTitle.text
         let N_Content = ModalContent.text
         let N_Price = ModalPrice.text
-        let N_Confidence = "별점3"//ModalConfidence.text
-        //let N_Level = "별점4"//ModalLevel.text
+        let N_Confidence = "star3"//ModalConfidence.text
+        let N_Level =  "star\(String(ModalRatingControl.rating))"//ModalLevel.text
         
         let currentTime = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: .medium, timeStyle: .medium)
     
         let N_Writing_Time = currentTime + " 작성"
-
         
-        //모달에 쓰여진 값들을 유저디폴트에 저장하기
-        UserDefaults.standard.set(N_Title, forKey: "title")
-        UserDefaults.standard.set(N_Content, forKey: "content")
-        UserDefaults.standard.set(N_Price, forKey: "price")
-        UserDefaults.standard.set(N_Confidence, forKey: "confidence")
-        //UserDefaults.standard.set(N_Level, forKey: "level")
-        UserDefaults.standard.set(N_Writing_Time, forKey: "writing_time")//쓰여진 시간 업데이트
-        UserDefaults.standard.synchronize()
+        
+        //모달에 쓰여진 값들을 delegate에 저장하기
+        let appDele = UIApplication.shared.delegate as! AppDelegate
+        let newTodo = Todo(title: N_Title!, detail: N_Content!, category: appDele.modal_category, price: N_Price!, confidence: N_Confidence, level: N_Level, writing: N_Writing_Time)
+        appDele.todos.insert(newTodo, at:0)
+        
         
         self.dismiss(animated: true, completion: nil)
         
@@ -69,8 +69,8 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.ModalLevelPicker.dataSource = self;
-        self.ModalLevelPicker.delegate = self;
+        self.ModalTimePicker.dataSource = self;
+        self.ModalTimePicker.delegate = self;
 
 
            }
@@ -78,10 +78,8 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
     override func viewWillAppear(_ animated: Bool) {
         
         //유저디폴트가 nil이 아니라면 카테고리 미리보기에 업데이트
-        if let Modal_Category = UserDefaults.standard.object(forKey: "category")
-        {
-            ModalImage.image = UIImage(named: Modal_Category as! String)
-        }
+        let appDele = UIApplication.shared.delegate as! AppDelegate
+        ModalImage.image = UIImage(named: appDele.modal_category)
         
         
     }

@@ -24,6 +24,7 @@
 		E552DDA61F3DA1CA008263EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E552DDA51F3DA1CA008263EE /* GoogleService-Info.plist */; };
 		E5545D6D1F3EDF7F0064407B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */; };
 		E5545D6F1F3EF0E00064407B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5545D6E1F3EF0E00064407B /* CategoryViewController.swift */; };
+		E561E6C11F45486C00F1F834 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561E6C01F45486C00F1F834 /* RatingControl.swift */; };
 		E566891D1F440516006A98EF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E566891C1F440516006A98EF /* CheckBox.swift */; };
 		E5F0D50F1F3C590F001AE002 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0D50E1F3C590F001AE002 /* PostViewController.swift */; };
 		ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B80121F396D8200AFB169 /* MapViewController.swift */; };
@@ -49,6 +50,8 @@
 		E552DDA51F3DA1CA008263EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5545D6E1F3EF0E00064407B /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E561E6B71F45461E00F1F834 /* 심부름 목록_Sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "심부름 목록_Sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		E561E6C01F45486C00F1F834 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		E566891C1F440516006A98EF /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		E5F0D50E1F3C590F001AE002 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ED2B80121F396D8200AFB169 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		95E8E1FB1F3855A1001189C5 = {
 			isa = PBXGroup;
 			children = (
+				E561E6BC1F45462A00F1F834 /* star_rate */,
 				E566891E1F440CE4006A98EF /* Button */,
 				E5545D691F3ECDF80064407B /* Category */,
 				E552DDA31F3DA04D008263EE /* message */,
@@ -80,6 +84,7 @@
 				95E8E2401F38634F001189C5 /* DetailViewController.swift */,
 				95E8E2061F3855A1001189C5 /* bul_Sample */,
 				95E8E2051F3855A1001189C5 /* Products */,
+				E561E6B71F45461E00F1F834 /* 심부름 목록_Sample-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +143,14 @@
 				E5545D6C1F3EDF7F0064407B /* CategoryCollectionViewCell.swift */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		E561E6BC1F45462A00F1F834 /* star_rate */ = {
+			isa = PBXGroup;
+			children = (
+				E561E6C01F45486C00F1F834 /* RatingControl.swift */,
+			);
+			name = star_rate;
 			sourceTree = "<group>";
 		};
 		E566891E1F440CE4006A98EF /* Button */ = {
@@ -206,6 +219,7 @@
 				TargetAttributes = {
 					95E8E2031F3855A1001189C5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -263,6 +277,7 @@
 				95E8E21E1F38590D001189C5 /* MainListTableViewCell.swift in Sources */,
 				E5545D6D1F3EDF7F0064407B /* CategoryCollectionViewCell.swift in Sources */,
 				ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */,
+				E561E6C11F45486C00F1F834 /* RatingControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,10 +400,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "심부름 목록_Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.ac.korea.----------------Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "심부름 목록_Sample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -397,10 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "심부름 목록_Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.ac.korea.----------------Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "심부름 목록_Sample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
