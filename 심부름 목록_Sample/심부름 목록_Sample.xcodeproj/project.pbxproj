@@ -219,6 +219,7 @@
 				TargetAttributes = {
 					95E8E2031F3855A1001189C5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8A258HWVTW;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -401,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8A258HWVTW;
 				INFOPLIST_FILE = "심부름 목록_Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.ac.korea.----------------Sample";
@@ -416,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8A258HWVTW;
 				INFOPLIST_FILE = "심부름 목록_Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.ac.korea.----------------Sample";

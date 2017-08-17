@@ -59,8 +59,35 @@ class MainListTableViewCell: UITableViewCell {
     @IBAction func isClicked(_ sender: Any) {
         print("button is \(HeartButton.isChecked)")
         
-        isChecked = !isChecked
+        let appDele = UIApplication.shared.delegate as! AppDelegate
+        if HeartButton.isChecked == true {
+            if let myCell = HeartButton.myCell, let indexPath = HeartButton.myTable?.indexPath(for: myCell) {
+                print("I am in row \(indexPath.row)")
+                appDele.interest_cell.insert(indexPath.row, at: 0)
+            }
+        } else {
+            if let myCell = HeartButton.myCell, let indexPath = HeartButton.myTable?.indexPath(for: myCell) {
+                if let index = appDele.interest_cell.index(of: indexPath.row) {
+                    appDele.interest_cell.remove(at: index)
+                }
+                //appDele.interest_cell.index(of: indexPath.row).map{ appDele.interest_cell.remove(at: $0) }
+                
+            }
+        }
         
         
+        
+        
+    }
+    
+}
+
+extension Array where Element: Equatable {
+    
+    // Remove first collection element that is equal to the given `object`:
+    mutating func remove(object: Element) {
+        if let index = index(of: object) {
+            remove(at: index)
+        }
     }
 }

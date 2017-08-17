@@ -9,6 +9,10 @@
 import UIKit
 
 class CheckBox: UIButton {
+    
+    //잠깐 추가
+    weak var myTable: UITableView?
+    weak var myCell:  UITableViewCell?
 
     //하트버튼을 위한 클래스
         // Images
@@ -34,7 +38,13 @@ class CheckBox: UIButton {
         
     func buttonClicked(sender: UIButton) {
         if sender == self {
-            isChecked = !isChecked
+            if isChecked == true {
+                isChecked = !isChecked
+            
+            }
+            else {
+                isChecked = !isChecked
+            }
         }
     }
 }
