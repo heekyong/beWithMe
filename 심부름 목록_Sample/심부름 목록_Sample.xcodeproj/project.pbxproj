@@ -28,6 +28,9 @@
 		E566891D1F440516006A98EF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E566891C1F440516006A98EF /* CheckBox.swift */; };
 		E5F0D50F1F3C590F001AE002 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0D50E1F3C590F001AE002 /* PostViewController.swift */; };
 		ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B80121F396D8200AFB169 /* MapViewController.swift */; };
+		ED61AB871F45872F008E29C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED61AB861F45872F008E29C2 /* HistoryViewController.swift */; };
+		ED61AB891F459008008E29C2 /* History_MViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED61AB881F459008008E29C2 /* History_MViewController.swift */; };
+		ED61AB8B1F4592D2008E29C2 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED61AB8A1F4592D2008E29C2 /* HistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		E566891C1F440516006A98EF /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		E5F0D50E1F3C590F001AE002 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ED2B80121F396D8200AFB169 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ED61AB861F45872F008E29C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		ED61AB881F459008008E29C2 /* History_MViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History_MViewController.swift; sourceTree = "<group>"; };
+		ED61AB8A1F4592D2008E29C2 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		95E8E1FB1F3855A1001189C5 = {
 			isa = PBXGroup;
 			children = (
+				ED61AB8A1F4592D2008E29C2 /* HistoryTableViewCell.swift */,
+				ED61AB881F459008008E29C2 /* History_MViewController.swift */,
+				ED61AB861F45872F008E29C2 /* HistoryViewController.swift */,
 				E561E6BC1F45462A00F1F834 /* star_rate */,
 				E566891E1F440CE4006A98EF /* Button */,
 				E5545D691F3ECDF80064407B /* Category */,
@@ -273,10 +282,13 @@
 				95E8E2081F3855A1001189C5 /* AppDelegate.swift in Sources */,
 				95E8E2421F38634F001189C5 /* DetailViewController.swift in Sources */,
 				95E8E21C1F385725001189C5 /* MainListViewController.swift in Sources */,
+				ED61AB891F459008008E29C2 /* History_MViewController.swift in Sources */,
 				E5545D6F1F3EF0E00064407B /* CategoryViewController.swift in Sources */,
 				E54F09B21F4181A000927176 /* SegmentHistoryViewController.swift in Sources */,
+				ED61AB8B1F4592D2008E29C2 /* HistoryTableViewCell.swift in Sources */,
 				95E8E21E1F38590D001189C5 /* MainListTableViewCell.swift in Sources */,
 				E5545D6D1F3EDF7F0064407B /* CategoryCollectionViewCell.swift in Sources */,
+				ED61AB871F45872F008E29C2 /* HistoryViewController.swift in Sources */,
 				ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */,
 				E561E6C11F45486C00F1F834 /* RatingControl.swift in Sources */,
 			);
