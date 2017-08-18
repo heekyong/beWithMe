@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>932005895280-rasd0l1o0gsuh3bj5nmu5k2d21bpoocc.apps.googleusercontent.com</string>
+	<string>648019375731-9fh06tm0th8drkibkdq378pcsfqmc0l0.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.932005895280-rasd0l1o0gsuh3bj5nmu5k2d21bpoocc</string>
+	<string>com.googleusercontent.apps.648019375731-9fh06tm0th8drkibkdq378pcsfqmc0l0</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDyC-g9KEqQKz6zLwUaUXCNOn8mEsZpmjc</string>
+	<string>AIzaSyDS2G2e1D13-PQ7xVFu8sPl9X1BwkVrrO4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>932005895280</string>
+	<string>648019375731</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>kr.ac.korea.----------------Sample</string>
+	<string>rw.firebase.gettingstarted</string>
 	<key>PROJECT_ID</key>
-	<string>bewithme-7c80b</string>
+	<string>chat-3b033</string>
 	<key>STORAGE_BUCKET</key>
-	<string>bewithme-7c80b.appspot.com</string>
+	<string>chat-3b033.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:932005895280:ios:6faa85ccb4816c20</string>
+	<string>1:648019375731:ios:11bd119eb6688866</string>
 	<key>DATABASE_URL</key>
-	<string>https://bewithme-7c80b.firebaseio.com</string>
+	<string>https://chat-3b033.firebaseio.com</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 struct Todo {
     var title, detail, category, price, confidence, level, writing : String
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        FirebaseApp.configure()
         return true
     }
 
