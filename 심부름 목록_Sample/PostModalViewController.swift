@@ -13,6 +13,7 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var ModalRatingControl: RatingControl!
     
     
+        
     
     //시간 선택 관련
     var pickerDataSource = ["0분", "10분", "20분", "30분", "40분", "50분"];
