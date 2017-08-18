@@ -27,7 +27,7 @@ class PostViewController: UIViewController {
         ConfidenceStarImage.image = UIImage(named: appDele.todos[Order].confidence)
         WritingTimeTextView.text = appDele.todos[Order].writing
         
-        UserDefaults.standard.removeObject(forKey: "Order")
+        //UserDefaults.standard.removeObject(forKey: "Order")
 
         
     }

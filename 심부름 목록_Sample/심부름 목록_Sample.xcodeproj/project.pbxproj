@@ -29,6 +29,7 @@
 		E5C414E61F46D56D00AA8454 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C414E51F46D56D00AA8454 /* ChatViewController.swift */; };
 		E5C414E81F46D59F00AA8454 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C414E71F46D59F00AA8454 /* constant.swift */; };
 		E5C414EC1F46D97A00AA8454 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C414EB1F46D97A00AA8454 /* GoogleService-Info.plist */; };
+		E5C414EE1F46E71200AA8454 /* ChatMiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C414ED1F46E71200AA8454 /* ChatMiddleViewController.swift */; };
 		E5F0D50F1F3C590F001AE002 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0D50E1F3C590F001AE002 /* PostViewController.swift */; };
 		ED2B80131F396D8200AFB169 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B80121F396D8200AFB169 /* MapViewController.swift */; };
 		ED61AB871F45872F008E29C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED61AB861F45872F008E29C2 /* HistoryViewController.swift */; };
@@ -63,6 +64,7 @@
 		E5C414E51F46D56D00AA8454 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E5C414E71F46D59F00AA8454 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		E5C414EB1F46D97A00AA8454 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5C414ED1F46E71200AA8454 /* ChatMiddleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMiddleViewController.swift; sourceTree = "<group>"; };
 		E5F0D50E1F3C590F001AE002 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ED2B80121F396D8200AFB169 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ED61AB861F45872F008E29C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E5C414E71F46D59F00AA8454 /* constant.swift */,
-				E5C414E51F46D56D00AA8454 /* ChatViewController.swift */,
+				E5C414EF1F46E71900AA8454 /* chat */,
 				ED61AB8A1F4592D2008E29C2 /* HistoryTableViewCell.swift */,
 				ED61AB881F459008008E29C2 /* History_MViewController.swift */,
 				ED61AB861F45872F008E29C2 /* HistoryViewController.swift */,
@@ -198,6 +200,15 @@
 				E566891C1F440516006A98EF /* CheckBox.swift */,
 			);
 			name = Button;
+			sourceTree = "<group>";
+		};
+		E5C414EF1F46E71900AA8454 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				E5C414E51F46D56D00AA8454 /* ChatViewController.swift */,
+				E5C414ED1F46E71200AA8454 /* ChatMiddleViewController.swift */,
+			);
+			name = chat;
 			sourceTree = "<group>";
 		};
 		E5F0D5101F3C592A001AE002 /* post */ = {
@@ -378,6 +389,7 @@
 				95E8E2421F38634F001189C5 /* DetailViewController.swift in Sources */,
 				E5C414E61F46D56D00AA8454 /* ChatViewController.swift in Sources */,
 				95E8E21C1F385725001189C5 /* MainListViewController.swift in Sources */,
+				E5C414EE1F46E71200AA8454 /* ChatMiddleViewController.swift in Sources */,
 				ED61AB891F459008008E29C2 /* History_MViewController.swift in Sources */,
 				E5545D6F1F3EF0E00064407B /* CategoryViewController.swift in Sources */,
 				E54F09B21F4181A000927176 /* SegmentHistoryViewController.swift in Sources */,

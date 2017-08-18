@@ -155,8 +155,6 @@ class ChatViewController: JSQMessagesViewController {
         finishSendingMessage()
     }
     
-    @IBAction func cancel(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+    
     
 }
