@@ -38,8 +38,9 @@ class CategoryViewController: UIViewController, UICollectionViewDataSource, UICo
         //이미지 삽입 - 이미지 크기는 안정해줌 정해야함.
         cell.Collection_Image.image = UIImage(named:Image_Name[indexPath.item])
         
-        //배경화면 투명 구현해야됨
-        cell.backgroundColor? = UIColor.clear
+        //배경 투명
+        collectionView.backgroundColor = UIColor.clear.withAlphaComponent(0)
+        
         
         //cell이 선택된 경우
         if selectedIndex == indexPath.row

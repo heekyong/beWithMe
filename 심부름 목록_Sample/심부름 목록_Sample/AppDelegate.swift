@@ -20,7 +20,7 @@ struct Interestdo {
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var todos = [
-        Todo(title: "안암역 스타벅스 텀블러 구매대행 가능하신 분 ㅠㅠ", detail: "여친이 꼭 갖고싶다고 했던 스벅 텀블러가 내일 출시하는데요 내일 오전 9시에 급하게 일이 있어서 못갈 것 같네요 안암 사시는 분 좀 도와주세요", category: "take-away-coffee", price: "3,000", confidence: "star3", level: "star3", writing: "Aug 13, 2017. 11:34:23 AM  작성"),
+        Todo(title: "안암역 스타벅스 텀블러 구매대행ㅠㅠ", detail: "여친이 꼭 갖고싶다고 했던 스벅 텀블러가 내일 출시하는데요 내일 오전 9시에 급하게 일이 있어서 못갈 것 같네요 안암 사시는 분 좀 도와주세요", category: "take-away-coffee", price: "3,000", confidence: "star3", level: "star3", writing: "Aug 13, 2017. 11:34:23 AM  작성"),
         Todo(title: "한자 필기 급구합니다", detail: "교내 한자시험 필기 구합니다 저번 시간에 못가서요 ㅠ", category: "open-book", price: "10,000", confidence: "star4", level: "star4", writing: "Aug 12, 2017. 2:41:33 PM  작성")
     ]
     
