@@ -28,7 +28,7 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         
         Cell.TitleLabel.text = todo.title
         Cell.DetailLabel.text = todo.detail
-        Cell.CategoryImage.image = UIImage(named: todo.category)
+        Cell.CategoryImage.image = UIImage(named: todo.category + "_black")
         Cell.PriceLabel.text = todo.price
         Cell.ConfidenceStarImage.image = UIImage(named: todo.confidence)//작동안함
         Cell.LevelStarImage.image = UIImage(named: todo.level)
