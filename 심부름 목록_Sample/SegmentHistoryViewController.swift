@@ -13,39 +13,10 @@ class SegmentHistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       Segment.selectedSegmentIndex = 0
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
             }
     
-    @IBOutlet weak var Segment: UISegmentedControl!
-    @IBOutlet weak var Seg7Table: UIView!
-    @IBOutlet weak var Seg30Table: UIView!
-    @IBOutlet weak var SegAllTable: UIView!
-    
-    //언니 작동이 안되서 임의로 지웠엄
-//    @IBAction func IndexChanged(_ sender: Any) {
-//        switch Segment.selectedSegmentIndex {
-//        case 0:
-//            Seg7Table.isHidden = false
-//            Seg30Table.isHidden = true
-//            SegAllTable.isHidden = true
-//        case 1:
-//            Seg7Table.isHidden = true
-//            Seg30Table.isHidden = false
-//            SegAllTable.isHidden = true
-//
-//        case 2:
-//            Seg7Table.isHidden = true
-//            Seg30Table.isHidden = true
-//            SegAllTable.isHidden = false
-//
-//        default:
-//            break;
-//        }
-//
-//    }
-
 }
