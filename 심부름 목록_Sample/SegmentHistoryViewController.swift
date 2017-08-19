@@ -16,12 +16,43 @@ class SegmentHistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Segment.selectedSegmentIndex = 0
 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
             }
+    
+    @IBOutlet weak var Segment: UISegmentedControl!
+    
+    @IBOutlet weak var SegIncomeTable: UIView!
+    @IBOutlet weak var SegExpendTable: UIView!
+    @IBOutlet weak var SegAllTable: UIView!
+    
+    @IBAction func IndexChanged(_ sender: Any) {
+        
+        switch Segment.selectedSegmentIndex {
+        case 0:
+            SegIncomeTable.isHidden = false
+            SegExpendTable.isHidden = true
+            SegAllTable.isHidden = true
+        case 1:
+            SegIncomeTable.isHidden = true
+            SegExpendTable.isHidden = false
+            SegAllTable.isHidden = true
+        case 2:
+            SegIncomeTable.isHidden = true
+            SegExpendTable.isHidden = true
+            SegAllTable.isHidden = false
+        default:
+            break;
+        }
+        
+    }
+    
+    
     
     @IBAction func myAccount(_ sender: Any) {
         

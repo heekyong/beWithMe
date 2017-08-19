@@ -59,7 +59,7 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
         //모달에 쓰여진 값들을 delegate에 저장하기
         let appDele = UIApplication.shared.delegate as! AppDelegate
-        let newTodo = Todo(title: N_Title!, detail: N_Content!, category: appDele.modal_category, price: N_Price!, confidence: N_Confidence, level: N_Level, writing: N_Writing_Time)
+        let newTodo = Todo(title: N_Title!, detail: N_Content!, category: appDele.modal_category, price: N_Price!, confidence: N_Confidence, level: N_Level, writing: N_Writing_Time, interest:"no")
         appDele.todos.insert(newTodo, at:0)
         
         
