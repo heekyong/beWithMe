@@ -60,7 +60,7 @@ class History_MViewController: UIViewController, UITableViewDelegate, UITableVie
         let historyObject = myHistory[indexPath.row]
         
         
-        cell.bgImage.image = UIImage(named: historyObject["bg"]!)
+        //cell.bgImage.image = UIImage(named: historyObject["bg"]!)
         cell.iconImage.image = UIImage(named: historyObject["icon"]!)
         cell.cateLabel.text = historyObject["cate"]
         cell.dateLabel.text = historyObject["date"]

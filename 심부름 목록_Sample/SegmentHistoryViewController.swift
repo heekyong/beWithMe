@@ -10,6 +10,10 @@ import UIKit
 
 class SegmentHistoryViewController: UIViewController {
 
+    @IBOutlet weak var myMoney: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,5 +22,14 @@ class SegmentHistoryViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
             }
+    
+    @IBAction func myAccount(_ sender: Any) {
+        
+        myMoney.text = "0"
+        let alert = UIAlertController(title: "Alert", message: "내 계좌로 송금되었습니다.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
     
 }
