@@ -56,6 +56,8 @@ class History_IncomeViewController: UIViewController, UITableViewDelegate, UITab
         var myIncome = appDele.myHistory.filter { $0.pim == "plus" }
         
         let historyIncomeObject = myIncome[indexPath.row]
+        //myHistory[indexPath.row]
+        
         
         //CellA.bgImage.image = UIImage(named: historyAllObject.bg)
         CellI.priceImage.image = UIImage(named: historyIncomeObject.pim)

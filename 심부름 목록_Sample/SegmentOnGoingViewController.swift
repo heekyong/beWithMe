@@ -12,7 +12,9 @@ class SegmentOnGoingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         Segment.selectedSegmentIndex = 0
+        
 
            }
 
@@ -21,11 +23,11 @@ class SegmentOnGoingViewController: UIViewController {
     
     }
     
-
-    @IBOutlet weak var Segment: UISegmentedControl!
     
+    @IBOutlet weak var Segment: UISegmentedControl!
     @IBOutlet weak var SegOnGoingTable: UIView!
     @IBOutlet weak var SegInterestTable: UIView!
+    
     
     @IBAction func IndexChanged(_ sender: Any) {
         
@@ -33,15 +35,17 @@ class SegmentOnGoingViewController: UIViewController {
         case 0:
             SegOnGoingTable.isHidden = false
             SegInterestTable.isHidden = true
+            
         case 1:
             SegOnGoingTable.isHidden = true
             SegInterestTable.isHidden = false
-       
+            
+            
         default:
             break;
+            
         }
-
-        
-    }
+    
    
+    }
 }

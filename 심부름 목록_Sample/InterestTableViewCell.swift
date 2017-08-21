@@ -9,11 +9,13 @@
 import UIKit
 
 class InterestTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var cateImage: UIImageView!
     @IBOutlet weak var InterestNum: UILabel!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

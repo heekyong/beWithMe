@@ -9,25 +9,51 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var ModalContent: UITextView!
     @IBOutlet weak var ModalImage: UIImageView!
     @IBOutlet weak var ModalPrice: UITextField!
+    
     @IBOutlet weak var ModalTimePicker: UIPickerView!
+    
+    @IBOutlet weak var ModalHourPicker: UIPickerView!
+
+    @IBOutlet weak var ModalDatePicker: UIPickerView!
+    
     @IBOutlet weak var ModalRatingControl: RatingControl!
     
     
         
     
     //시간 선택 관련
-    var pickerDataSource = ["0분", "10분", "20분", "30분", "40분", "50분"];
+    var pickerTimeSource = ["0분", "10분", "20분", "30분", "40분", "50분"];
+    var pickerHourSource = ["0시간", "1시간", "2시간", "3시간", "4시간", "5시간","6시간","7시간","8시간","9시간","10시간","11시간","12시간","13시간","14시간","15시간","16시간","17시간","18시간","19시간","20시간","21시간","22시간","23시간"];
+    var pickerDateSource = ["0일", "1일", "2일", "3일", "4일", "5일","6일","7일"];
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerDataSource.count;
+        
+        if pickerView == ModalTimePicker {
+            return pickerTimeSource.count
+        }
+        else if pickerView == ModalHourPicker {
+            return pickerHourSource.count
+        }
+        else {
+            return pickerDateSource.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerDataSource[row]
+        if pickerView == ModalTimePicker {
+            return pickerTimeSource[row]
+        }
+        else if pickerView == ModalHourPicker {
+            return pickerHourSource[row]
+        }
+        else {
+            return pickerDateSource[row]
+        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
@@ -37,8 +63,18 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        let str = pickerDataSource[row]
-        return NSAttributedString(string: str, attributes: [NSForegroundColorAttributeName:UIColor.white])
+        let str0 = pickerTimeSource[row]
+        let str1 = pickerHourSource[row]
+        let str2 = pickerDateSource[row]
+        
+        if pickerView == ModalTimePicker {
+            return NSAttributedString(string: str0, attributes: [NSForegroundColorAttributeName:UIColor.white])
+        }
+        else if pickerView == ModalHourPicker {
+            return NSAttributedString(string: str1, attributes: [NSForegroundColorAttributeName:UIColor.white])        }
+        else {
+            return NSAttributedString(string: str2, attributes: [NSForegroundColorAttributeName:UIColor.white])        }
+
     }
     
     //별점 선택 끝

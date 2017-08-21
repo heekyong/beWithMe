@@ -39,14 +39,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         history(title:"명순구 교수님 민법학 원론 교재/기출 삽니다!",icon:"cate7",date:"2015.02.02",pim:"plus",price:"30000",cate:"해결",status:"완료",bg:"002bg")
     ]
     
-    var ongoing = [
-        
-        Todo(title: "커피명가 케이크 포장좀", detail: "레어치즈케이크!!!!!", category: "cutlery_black", price: "3,000", confidence: "star1", level: "star1", writing: "Aug 13, 2017. 11:34:23 AM  작성", interest:"no"),
-        Todo(title: "아리따움 할인제품 구매대행", detail: "아리따움 모디네일 원쁠원 젤네일 사다주세요", category: "duty-free_black", price: "2,000", confidence: "star4", level: "star1", writing: "Aug 12, 2017. 2:41:33 PM  작성", interest:"no")
+//    var ongoing = [
+//        
+//        Todo(title: "커피명가 케이크 포장좀", detail: "레어치즈케이크!!!!!", category: "cutlery_black", price: "3,000", confidence: "star1", level: "star1", writing: "Aug 13, 2017. 11:34:23 AM  작성", interest:"no"),
+//        Todo(title: "아리따움 할인제품 구매대행", detail: "아리따움 모디네일 원쁠원 젤네일 사다주세요", category: "duty-free_black", price: "2,000", confidence: "star4", level: "star1", writing: "Aug 12, 2017. 2:41:33 PM  작성", interest:"no")
+//    
+//    ]
     
-    ]
-    
-    var intrestdos :[Interestdo] = []
+//    var intrestdos :[Interestdo] = []
     
     var window: UIWindow?
     

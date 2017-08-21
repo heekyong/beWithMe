@@ -10,13 +10,15 @@ import UIKit
 
 class onGoingTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var cateImage: UIImageView!
     @IBOutlet weak var levelImage: UIImageView!
     @IBOutlet weak var confidenceImage: UIImageView!
+    
+    @IBOutlet weak var giveupLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,19 +36,16 @@ class onGoingTableViewCell: UITableViewCell {
         
         let alert = UIAlertController(title: "Alert", message: "별 일을 포기하였습니다.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
-    
-        //onGoingTableViewCell.presentViewController(alert, animated: true, completion: nil)
-        //self.present(alert, animated: true, completion: nil)
         
-        
+        giveupLabel.text = "포기하였습니다."
+        giveupLabel.textColor = UIColor.red
     }
+
     
     @IBAction func complete(_ sender: Any) {
         
         let alert = UIAlertController(title: "Alert", message: "별 일을 완료하였습니다.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
-        //SegmentOnGoingViewController.present(alert, animated: true, completion: nil)
-        
         
     }
     

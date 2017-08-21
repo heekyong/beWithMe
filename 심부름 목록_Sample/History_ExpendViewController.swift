@@ -51,7 +51,8 @@ class History_ExpendViewController: UIViewController, UITableViewDelegate, UITab
         
         var myExpend = appDele.myHistory.filter { $0.pim == "minus" }
 
-        let historyExpendObject = myExpend[indexPath.row]
+        let historyExpendObject = myExpend[indexPath.row]//myHistory[indexPath.row]
+        
         
         //CellA.bgImage.image = UIImage(named: historyAllObject.bg)
         CellE.priceImage.image = UIImage(named: historyExpendObject.pim)
