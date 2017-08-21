@@ -3,17 +3,10 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import 'font-awesome.min.css';
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic');
 
 /*
 	Solid State by HTML5 UP
-=======
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900');
-
-/*
-	Massively by HTML5 UP
->>>>>>> origin/master
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -23,18 +16,13 @@
 		large: '(max-width: 1280px)',
 		medium: '(max-width: 980px)',
 		small: '(max-width: 736px)',
-<<<<<<< HEAD
 		xsmall: '(max-width: 640px)',
-=======
-		xsmall: '(max-width: 480px)',
->>>>>>> origin/master
 		xxsmall: '(max-width: 360px)'
 	));
 
 	@include skel-layout((
 		reset: 'full',
 		boxModel: 'border',
-<<<<<<< HEAD
 		grid: ( gutters: 1.75em ),
 		breakpoints: (
 			small: (
@@ -43,22 +31,6 @@
 		)
 	));
 
-=======
-		grid: ( gutters: 1.5rem )
-	));
-
-	@mixin color($p) {
-		@include color-typography($p);
-		@include color-box($p);
-		@include color-button($p);
-		@include color-form($p);
-		@include color-list($p);
-		@include color-section($p);
-		@include color-table($p);
-		@include color-pagination($p);
-	}
-
->>>>>>> origin/master
 // Base.
 
 	@import 'base/page';
@@ -66,7 +38,6 @@
 
 // Component.
 
-<<<<<<< HEAD
 	@import 'components/section';
 	@import 'components/form';
 	@import 'components/box';
@@ -84,24 +55,3 @@
 	@import 'layout/banner';
 	@import 'layout/wrapper';
 	@import 'layout/footer';
-=======
-	@import 'components/box';
-	@import 'components/button';
-	@import 'components/form';
-	@import 'components/icon';
-	@import 'components/image';
-	@import 'components/list';
-	@import 'components/section';
-	@import 'components/table';
-	@import 'components/pagination';
-
-// Layout.
-
-	@import 'layout/wrapper';
-	@import 'layout/intro';
-	@import 'layout/header';
-	@import 'layout/nav';
-	@import 'layout/main';
-	@import 'layout/footer';
-	@import 'layout/navPanel';
->>>>>>> origin/master

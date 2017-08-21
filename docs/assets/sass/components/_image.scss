@@ -1,9 +1,5 @@
 ///
-<<<<<<< HEAD
 /// Solid State by HTML5 UP
-=======
-/// Massively by HTML5 UP
->>>>>>> origin/master
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -11,13 +7,8 @@
 /* Image */
 
 	.image {
-<<<<<<< HEAD
 		border-radius: _size(border-radius);
 		border: 0;
-=======
-		border: 0;
-		border-radius: _size(border-radius);
->>>>>>> origin/master
 		display: inline-block;
 		position: relative;
 
@@ -37,41 +28,21 @@
 
 		&.left {
 			float: left;
-<<<<<<< HEAD
 			padding: 0 1.5em 1em 0;
 			top: 0.25em;
-=======
-			margin: 0 2rem 2rem 0;
-			top: 0.75rem;
->>>>>>> origin/master
 		}
 
 		&.right {
 			float: right;
-<<<<<<< HEAD
 			padding: 0 0 1em 1.5em;
 			top: 0.25em;
-=======
-			margin: 0 0 2rem 2rem;
-			top: 0.75rem;
->>>>>>> origin/master
 		}
 
 		&.fit {
 			display: block;
-<<<<<<< HEAD
 			margin: 0 0 _size(element-margin) 0;
 			width: 100%;
 
-=======
-			margin: (_size(element-margin) * 1.25) 0;
-			width: 100%;
-
-			&:first-child {
-				margin-top: 0;
-			}
-
->>>>>>> origin/master
 			img {
 				width: 100%;
 			}
@@ -79,48 +50,11 @@
 
 		&.main {
 			display: block;
-<<<<<<< HEAD
 			margin: 0 0 (_size(element-margin) * 1.5) 0;
 			width: 100%;
 
-=======
-			margin: (_size(element-margin) * 2) 0;
-			width: 100%;
-
-			&:first-child {
-				margin-top: 0;
-			}
-
->>>>>>> origin/master
 			img {
 				width: 100%;
 			}
 		}
-<<<<<<< HEAD
-=======
-
-		@include breakpoint(small) {
-			&.fit {
-				margin: _size(element-margin) 0;
-			}
-
-			&.main {
-				margin: _size(element-margin) 0;
-			}
-		}
-	}
-
-	a.image {
-		overflow: hidden;
-
-		img {
-			@include vendor('transition', 'transform #{_duration(transition)} ease-out');
-		}
-
-		&:hover {
-			img {
-				@include vendor('transform', 'scale(1.05)');
-			}
-		}
->>>>>>> origin/master
 	}

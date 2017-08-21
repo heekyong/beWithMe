@@ -1,9 +1,5 @@
 ///
-<<<<<<< HEAD
 /// Solid State by HTML5 UP
-=======
-/// Massively by HTML5 UP
->>>>>>> origin/master
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -13,24 +9,16 @@
 	ol {
 		list-style: decimal;
 		margin: 0 0 _size(element-margin) 0;
-<<<<<<< HEAD
 		padding-left: 1.25em;
 
 		li {
 			padding-left: 0.25em;
-=======
-		padding-left: 1.25rem;
-
-		li {
-			padding-left: 0.25rem;
->>>>>>> origin/master
 		}
 	}
 
 	ul {
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
-<<<<<<< HEAD
 		padding-left: 1em;
 
 		li {
@@ -38,26 +26,12 @@
 		}
 
 		&.alt {
-=======
-		padding-left: 1rem;
-
-		li {
-			padding-left: 0.5rem;
-		}
-
-		&.divided {
->>>>>>> origin/master
 			list-style: none;
 			padding-left: 0;
 
 			li {
-<<<<<<< HEAD
 				border-top: solid 1px _palette(border);
 				padding: 0.5em 0;
-=======
-				border-top: solid 1px;
-				padding: 0.5rem 0;
->>>>>>> origin/master
 
 				&:first-child {
 					border-top: 0;
@@ -73,12 +47,7 @@
 
 			li {
 				display: inline-block;
-<<<<<<< HEAD
 				padding: 0 1em 0 0;
-=======
-				padding: 0 0.5rem 0 0;
-				vertical-align: middle;
->>>>>>> origin/master
 
 				&:last-child {
 					padding-right: 0;
@@ -86,34 +55,7 @@
 
 				.icon {
 					&:before {
-<<<<<<< HEAD
 						font-size: 1.25em;
-=======
-						width: 2.25rem;
-						height: 2.25rem;
-						line-height: 2.25rem;
-						display: inline-block;
-						text-align: center;
-						border-radius: 100%;
-						font-size: 1.25rem;
-					}
-				}
-			}
-
-			&.alt {
-				li {
-					.icon {
-						&:before {
-							@include vendor('transition', (
-								'color #{_duration(transition)} ease-in-out',
-								'background-color #{_duration(transition)} ease-in-out',
-								'border-color #{_duration(transition)} ease-in-out',
-								'box-shadow #{_duration(transition)} ease-in-out'
-							));
-
-							font-size: 1rem;
-						}
->>>>>>> origin/master
 					}
 				}
 			}
@@ -207,15 +149,6 @@
 					> * {
 						width: 100%;
 						margin: 0 !important;
-<<<<<<< HEAD
-=======
-
-						&.icon {
-							&:before {
-								margin-left: -2rem;
-							}
-						}
->>>>>>> origin/master
 					}
 				}
 
@@ -230,7 +163,6 @@
 				}
 			}
 		}
-<<<<<<< HEAD
 
 		&.contact {
 			list-style: none;
@@ -331,7 +263,10 @@
 						width: calc(50% - 2px);
 						text-align: right;
 						padding-left: 0.325em;
-=======
+					}
+				}
+			}
+		}
 	}
 
 	dl {
@@ -347,62 +282,3 @@
 			margin-left: _size(element-margin);
 		}
 	}
-
-	@mixin color-list($p: null) {
-		ul {
-			&.divided {
-				li {
-					border-top-color: _palette($p, border);
-				}
-			}
-
-			&.icons {
-				li {
-					a.icon {
-						&:hover {
-							&:before {
-								color: _palette($p, accent);
-							}
-						}
-					}
-				}
-
-				&.alt {
-					li {
-						.icon {
-							&:before {
-								box-shadow: inset 0 0 0 2px _palette($p, border);
-							}
-						}
-
-						a.icon {
-							&:hover {
-								&:before {
-									box-shadow: inset 0 0 0 2px _palette($p, accent);
-								}
-							}
-						}
->>>>>>> origin/master
-					}
-				}
-			}
-		}
-	}
-
-<<<<<<< HEAD
-	dl {
-		margin: 0 0 _size(element-margin) 0;
-
-		dt {
-			display: block;
-			font-weight: _font(weight-bold);
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
-		}
-
-		dd {
-			margin-left: _size(element-margin);
-		}
-	}
-=======
-	@include color-list;
->>>>>>> origin/master
