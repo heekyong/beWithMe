@@ -10,8 +10,8 @@ import UIKit
 
 class InterestViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var in_Title = ["커피명가 케이크 포장좀","아리따움 할인제품 구매대행"]
-    var in_Detail = ["레어치즈케이크!!!!!","아리따움 모디네일 원쁠원 젤네일 사다주세요"]
+    var in_Title = ["GS편의점에서 타코와사비","사다주세요 너무먹고싶음"]
+    var in_Detail = ["쓰레기봉투","집에 쓰레기봉투가 떨어졌어요 2개만부탁ㅎㅎ"]
     var in_Category = ["cutlery_black","duty-free_black"]
     var in_Price = ["3,000","2,000"]
     var in_Confidence = ["star1","star4"]

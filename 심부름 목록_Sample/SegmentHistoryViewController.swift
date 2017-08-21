@@ -35,16 +35,16 @@ class SegmentHistoryViewController: UIViewController {
         
         switch Segment.selectedSegmentIndex {
         case 0:
-            //SegIncomeTable.isHidden = false
-            //SegExpendTable.isHidden = true
-            SegAllTable.isHidden = false
+            SegIncomeTable.isHidden = false
+            SegExpendTable.isHidden = true
+            SegAllTable.isHidden = true
         case 1:
-            //SegIncomeTable.isHidden = true
-            //SegExpendTable.isHidden = false
-            SegAllTable.isHidden = false
+            SegIncomeTable.isHidden = true
+            SegExpendTable.isHidden = false
+            SegAllTable.isHidden = true
         case 2:
-            //SegIncomeTable.isHidden = true
-            //SegExpendTable.isHidden = true
+            SegIncomeTable.isHidden = true
+            SegExpendTable.isHidden = true
             SegAllTable.isHidden = false
         default:
             break;
