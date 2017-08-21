@@ -26,8 +26,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lblLocationInfo1.text = ""
-        lblLocationInfo2.text = ""
+        lblLocationInfo1.text = "별 일을 클릭하세요"
+        lblLocationInfo2.text = "위치를 확인해보세요"
         
         //Mark: - Authorization
         locationManager.delegate = self

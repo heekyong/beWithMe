@@ -49,7 +49,7 @@ class History_IncomeViewController: UIViewController, UITableViewDelegate, UITab
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let CellI = tableView.dequeueReusableCell(withIdentifier: "CellI", for: indexPath) as! HistoryTableViewCell
+        let CellC = tableView.dequeueReusableCell(withIdentifier: "CellC", for: indexPath) as! HistoryTableViewCell
         
         let appDele = UIApplication.shared.delegate as! AppDelegate
         
@@ -60,19 +60,19 @@ class History_IncomeViewController: UIViewController, UITableViewDelegate, UITab
         
         
         //CellA.bgImage.image = UIImage(named: historyAllObject.bg)
-        CellI.priceImage.image = UIImage(named: historyIncomeObject.pim)
+        CellC.priceImage.image = UIImage(named: historyIncomeObject.pim)
         
-        CellI.priceLabel.text = historyIncomeObject.price
-        CellI.dateLabel.text = historyIncomeObject.date
+        CellC.priceLabel.text = historyIncomeObject.price
+        CellC.dateLabel.text = historyIncomeObject.date
         
-        CellI.titleLabel.text = historyIncomeObject.title
-        CellI.iconImage.image = UIImage(named: historyIncomeObject.icon)
+        CellC.titleLabel.text = historyIncomeObject.title
+        CellC.iconImage.image = UIImage(named: historyIncomeObject.icon)
         
-        CellI.cateLabel.text = historyIncomeObject.cate
-        CellI.statusLabel.text = historyIncomeObject.status
+        CellC.cateLabel.text = historyIncomeObject.cate
+        CellC.statusLabel.text = historyIncomeObject.status
         
         
-        return CellI
+        return CellC
 
         
     }
