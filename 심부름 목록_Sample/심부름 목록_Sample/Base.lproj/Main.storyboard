@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Qt-we-lwJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Qt-we-lwJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--별 일 목록-->
+        <!--Segment View Controller-->
         <scene sceneID="5AB-iF-re3">
             <objects>
                 <viewController id="Rof-DI-6sl" customClass="SegmentViewController" customModule="________________Sample" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="별 일 목록" id="PKg-sI-eiv"/>
+                    <tabBarItem key="tabBarItem" title="" image="home_black2" id="PKg-sI-eiv">
+                        <inset key="imageInsets" minX="0.0" minY="40" maxX="0.0" maxY="40"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="SegMainTable" destination="4OK-DJ-6d7" id="1so-kY-SDs"/>
                         <outlet property="SegMapView" destination="Ocl-aL-Nl6" id="qmY-qF-Gzp"/>
@@ -230,7 +232,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="히스토리" id="X4r-AQ-11p"/>
+                    <tabBarItem key="tabBarItem" title="히스토리" image="history2" id="X4r-AQ-11p"/>
                     <connections>
                         <outlet property="SegAllTable" destination="dUJ-cj-Vjg" id="mSe-O9-2w5"/>
                         <outlet property="SegExpendTable" destination="6qu-wa-ZPC" id="O5j-Xa-Snt"/>
@@ -1289,7 +1291,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="my별" id="bIq-6n-1jq" userLabel="찜목록"/>
+                    <tabBarItem key="tabBarItem" title="my별" image="mypage_black2" id="bIq-6n-1jq" userLabel="찜목록"/>
                     <connections>
                         <outlet property="SegInterestTable" destination="ecr-MP-4cv" id="Usf-kR-qF7"/>
                         <outlet property="SegOnGoingTable" destination="LGw-3t-Rj5" id="Qg5-RK-mPa"/>
@@ -2104,6 +2106,9 @@
         <image name="WON" width="42" height="30"/>
         <image name="bg4" width="562" height="1000"/>
         <image name="heart _FILL" width="63" height="54"/>
+        <image name="history2" width="30" height="30"/>
+        <image name="home_black2" width="30" height="30"/>
+        <image name="mypage_black2" width="30" height="30"/>
         <image name="setting" width="562" height="384"/>
         <image name="star3" width="177" height="33"/>
         <image name="star4" width="144" height="33"/>
