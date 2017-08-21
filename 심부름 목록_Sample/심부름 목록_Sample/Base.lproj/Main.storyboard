@@ -114,7 +114,7 @@
                             <constraint firstItem="KzS-X1-Hsn" firstAttribute="top" secondItem="983-RK-dlg" secondAttribute="bottom" constant="7" id="vah-1S-Gf9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="별 일 목록" id="PKg-sI-eiv"/>
+                    <tabBarItem key="tabBarItem" title="별 일 목록" selectedImage="home_white2" id="PKg-sI-eiv"/>
                     <connections>
                         <outlet property="SegMainTable" destination="4OK-DJ-6d7" id="1so-kY-SDs"/>
                         <outlet property="SegMapView" destination="Ocl-aL-Nl6" id="qmY-qF-Gzp"/>
@@ -256,7 +256,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="히스토리" id="X4r-AQ-11p"/>
+                    <tabBarItem key="tabBarItem" title="히스토리" selectedImage="history2" id="X4r-AQ-11p"/>
                     <connections>
                         <outlet property="SegAllTable" destination="dUJ-cj-Vjg" id="mSe-O9-2w5"/>
                         <outlet property="SegExpendTable" destination="6qu-wa-ZPC" id="O5j-Xa-Snt"/>
@@ -1349,7 +1349,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="my별" id="bIq-6n-1jq" userLabel="찜목록"/>
+                    <tabBarItem key="tabBarItem" title="my별" selectedImage="mypage_white2" id="bIq-6n-1jq" userLabel="찜목록"/>
                     <connections>
                         <outlet property="SegInterestTable" destination="ecr-MP-4cv" id="cyL-K2-ecU"/>
                         <outlet property="SegOnGoingTable" destination="LGw-3t-Rj5" id="mKD-17-hPt"/>
@@ -2164,6 +2164,9 @@
         <image name="WON" width="42" height="30"/>
         <image name="bg4" width="562" height="1000"/>
         <image name="heart _FILL" width="63" height="54"/>
+        <image name="history2" width="30" height="30"/>
+        <image name="home_white2" width="30" height="30"/>
+        <image name="mypage_white2" width="30" height="30"/>
         <image name="planet" width="64" height="64"/>
         <image name="planet3" width="79" height="67"/>
         <image name="planet4" width="64" height="64"/>
