@@ -47,7 +47,7 @@
                                     <segue destination="imt-aR-TRL" kind="embed" id="VMJ-Zz-vME"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4OK-DJ-6d7">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4OK-DJ-6d7">
                                 <rect key="frame" x="16" y="142" width="343" height="468"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.sublayers.cornerRadius">
@@ -71,10 +71,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="planet4" translatesAutoresizingMaskIntoConstraints="NO" id="KzS-X1-Hsn">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="planet4" translatesAutoresizingMaskIntoConstraints="NO" id="KzS-X1-Hsn">
                                 <rect key="frame" x="166" y="49" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="i1g-Pf-Ca7"/>
+                                    <constraint firstAttribute="height" constant="43" id="sbd-Kq-WuU"/>
+                                </constraints>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v7B-5Y-Bqh">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v7B-5Y-Bqh">
                                 <rect key="frame" x="105" y="107" width="165" height="29"/>
                                 <segments>
                                     <segment title="지도"/>
