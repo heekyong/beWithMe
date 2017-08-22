@@ -19,6 +19,7 @@ class onGoingViewController: UIViewController, UITableViewDelegate, UITableViewD
     var on_Level = ["star1","star1"]
     var on_Writing = ["Aug 13, 2017. 11:34:23 AM  작성","Aug 12, 2017. 2:41:33 PM  작성"]
     var on_Interest = ["no","no"]
+    var on_leftTime = ["1시간 00분 남음","2시간 50분 남음"]
     
     
     @IBOutlet weak var ongoingtable: UITableView!
@@ -67,6 +68,9 @@ class onGoingViewController: UIViewController, UITableViewDelegate, UITableViewD
         CellO.cateImage.image = UIImage(named: on_Category[indexPath.row])
         CellO.levelImage.image = UIImage(named: on_Level[indexPath.row])
         CellO.confidenceImage.image = UIImage(named: on_Confidence[indexPath.row])
+        CellO.leftTimeLabel.text = on_leftTime[indexPath.row]
+
+        //CellO.giveupLabel = ""
         
         
         return CellO

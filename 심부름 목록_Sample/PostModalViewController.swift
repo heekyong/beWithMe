@@ -13,8 +13,9 @@ class PostModalViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var ModalTimePicker: UIPickerView!
     
     @IBOutlet weak var ModalHourPicker: UIPickerView!
-
+    
     @IBOutlet weak var ModalDatePicker: UIPickerView!
+    
     
     @IBOutlet weak var ModalRatingControl: RatingControl!
     

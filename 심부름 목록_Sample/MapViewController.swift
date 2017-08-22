@@ -54,7 +54,23 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         setAnnotation(latitude: 37.5890055, longitude: 127.02936350000004, delta: 1, title: "승가마트", subtitle: "서울 성북구 안암동 12-81", task: "별 일:", detail: "택배 대리 수령")
         //심부름6
         setAnnotation(latitude: 37.5892274, longitude: 127.02849170000002, delta: 1, title: "개운사", subtitle: "서울 성북구 안암동 157-3", task: "별 일:", detail: "개운사에서 불공드리기")
-
+        
+        //축척을 위해
+        let latitude:CLLocationDegrees = 37.5907990//insert latitutde
+        
+        let longitude:CLLocationDegrees = 127.0277770//insert longitude
+        
+        let latDelta:CLLocationDegrees = 0.01
+        
+        let lonDelta:CLLocationDegrees = 0.01
+        
+        let span = MKCoordinateSpanMake(latDelta, lonDelta)
+        
+        let location = CLLocationCoordinate2DMake(latitude, longitude)
+        
+        let region = MKCoordinateRegionMake(location, span)
+        
+        myMap.setRegion(region, animated: false)
     }
     
     

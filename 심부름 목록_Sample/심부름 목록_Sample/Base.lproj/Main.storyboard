@@ -281,6 +281,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" fixedFrame="YES" image="001bg" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-FA-6r3">
+                                <rect key="frame" x="-90" y="-69" width="562" height="149"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="작성된 별 일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9di-WX-RMe">
                                 <rect key="frame" x="145" y="14" width="83" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
@@ -417,10 +421,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" fixedFrame="YES" image="001bg" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-FA-6r3">
-                                <rect key="frame" x="-90" y="-69" width="562" height="149"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -573,7 +573,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="별 일이 무엇인지 말해주세요" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wTb-8N-GUO">
-                                <rect key="frame" x="73" y="94" width="229" height="36"/>
+                                <rect key="frame" x="73" y="111" width="229" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -643,7 +643,7 @@
                                 </state>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-aW-sH7">
-                                <rect key="frame" x="137" y="563" width="100" height="39"/>
+                                <rect key="frame" x="282" y="564" width="70" height="39"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -680,11 +680,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FNm-5d-oAy">
+                                <rect key="frame" x="134" y="564" width="70" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7W6-wt-Dgk" id="itd-5G-YgG"/>
+                                    <outlet property="delegate" destination="7W6-wt-Dgk" id="zTb-q2-4yW"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIk-yi-Wa0">
+                                <rect key="frame" x="204" y="564" width="70" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7W6-wt-Dgk" id="I3F-vS-jUm"/>
+                                    <outlet property="delegate" destination="7W6-wt-Dgk" id="e0A-S0-Orp"/>
+                                </connections>
+                            </pickerView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="planet1" translatesAutoresizingMaskIntoConstraints="NO" id="yHt-KY-DTY">
+                                <rect key="frame" x="166" y="50" width="43" height="43"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="ModalContent" destination="QfS-H5-T2U" id="qTt-AF-gfJ"/>
+                        <outlet property="ModalDatePicker" destination="FNm-5d-oAy" id="S8h-X5-PWD"/>
+                        <outlet property="ModalHourPicker" destination="SIk-yi-Wa0" id="NMf-Vz-MgO"/>
                         <outlet property="ModalImage" destination="iya-cR-mUF" id="D9H-UE-QEK"/>
                         <outlet property="ModalPrice" destination="jTD-bX-5jo" id="pPy-4W-KMn"/>
                         <outlet property="ModalRatingControl" destination="cCR-Uc-i6r" id="3LZ-oM-AA0"/>
@@ -963,6 +987,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="343" height="468"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.setCornerRadius">
                             <integer key="value" value="4"/>
@@ -976,7 +1002,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpk-04-rCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3301.5999999999999" y="2221.8890554722639"/>
+            <point key="canvasLocation" x="3258" y="2164"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="4ST-Pp-Mas">
@@ -1045,9 +1071,9 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-Ia-2ZJ">
-                                                    <rect key="frame" x="-2" y="53" width="66" height="12"/>
+                                                    <rect key="frame" x="1" y="53" width="66" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="13"/>
                                                     <color key="textColor" red="0.90970492359999999" green="0.90986090900000005" blue="0.90969508889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1400,7 +1426,7 @@
                                         <rect key="frame" x="0.0" y="5" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y8u-TE-uPO" id="XMh-Q0-WJY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D8A-2V-MJ7" userLabel="bg">
@@ -1442,7 +1468,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88888" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isS-6C-6Qn">
-                                                    <rect key="frame" x="284.5" y="76" width="64.5" height="27"/>
+                                                    <rect key="frame" x="285" y="76" width="64" height="27"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="22"/>
                                                     <color key="textColor" red="0.27312024109999999" green="0.15251716330000001" blue="0.1623975731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="highlightedColor" red="0.55423144040000005" green="0.48118432020000002" blue="0.1914415538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1546,7 +1572,7 @@
                             <rect key="frame" x="0.0" y="5" width="375" height="120"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1vd-jW-AcY" id="GU9-bn-xTI">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TWK-Qj-gBY" userLabel="bg">
@@ -1673,7 +1699,7 @@
                                         <rect key="frame" x="0.0" y="5" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bki-mc-TMe" id="eSF-jI-bEy">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kfU-p6-uIY" userLabel="bg">
@@ -1715,7 +1741,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88888" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFB-hJ-a3u">
-                                                    <rect key="frame" x="284.5" y="76" width="64.5" height="27"/>
+                                                    <rect key="frame" x="285" y="76" width="64" height="27"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="22"/>
                                                     <color key="textColor" red="0.27312024109999999" green="0.15251716330000001" blue="0.1623975731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="highlightedColor" red="0.55423144040000005" green="0.48118432020000002" blue="0.1914415538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1926,6 +1952,13 @@
                                                     <color key="textColor" red="0.61472563010000003" green="0.19952809596984483" blue="0.21699433338632446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vd-sw-TI3">
+                                                    <rect key="frame" x="26" y="8" width="120" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="gFP-yz-OCQ" secondAttribute="trailing" constant="29" id="0OU-0Q-Weg"/>
@@ -1973,6 +2006,8 @@
                                             <outlet property="cateImage" destination="Mhw-Ga-74O" id="hlY-wO-ggN"/>
                                             <outlet property="confidenceImage" destination="I2m-S9-aaC" id="Sn2-1t-Epo"/>
                                             <outlet property="detailLabel" destination="07K-z1-NLC" id="RTt-Wl-bxj"/>
+                                            <outlet property="giveupLabel" destination="1vd-sw-TI3" id="jII-SA-Ibb"/>
+                                            <outlet property="leftTimeLabel" destination="jgZ-vy-sSM" id="cug-Wh-mP2"/>
                                             <outlet property="levelImage" destination="IsZ-jH-va7" id="9ns-e1-IDb"/>
                                             <outlet property="priceLabel" destination="39U-Ik-x3y" id="Og4-sP-9KE"/>
                                             <outlet property="titleLabel" destination="gFP-yz-OCQ" id="bgn-Ix-10W"/>
@@ -1998,7 +2033,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rcd-RA-P1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3275.5" y="4114"/>
+            <point key="canvasLocation" x="3274.4000000000001" y="4113.6431784107954"/>
         </scene>
         <!--Interest View Controller-->
         <scene sceneID="B4U-nZ-Keb">
@@ -2168,6 +2203,7 @@
         <image name="home_white2" width="30" height="30"/>
         <image name="mypage_white2" width="30" height="30"/>
         <image name="planet" width="64" height="64"/>
+        <image name="planet1" width="64" height="64"/>
         <image name="planet3" width="79" height="67"/>
         <image name="planet4" width="64" height="64"/>
         <image name="setting" width="562" height="384"/>

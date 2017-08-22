@@ -18,6 +18,8 @@ class onGoingTableViewCell: UITableViewCell {
     @IBOutlet weak var confidenceImage: UIImageView!
     
     @IBOutlet weak var giveupLabel: UILabel!
+    @IBOutlet weak var leftTimeLabel: UILabel!
+    
     
     
     override func awakeFromNib() {

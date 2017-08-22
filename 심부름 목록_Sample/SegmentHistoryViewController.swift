@@ -18,6 +18,10 @@ class SegmentHistoryViewController: UIViewController {
         super.viewDidLoad()
         
         Segment.selectedSegmentIndex = 0
+        SegIncomeTable.isHidden = false
+        SegExpendTable.isHidden = true
+        SegAllTable.isHidden = true
+
 
     }
 

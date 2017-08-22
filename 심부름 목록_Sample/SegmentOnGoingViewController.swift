@@ -14,7 +14,8 @@ class SegmentOnGoingViewController: UIViewController {
         super.viewDidLoad()
         
         Segment.selectedSegmentIndex = 0
-        
+        SegOnGoingTable.isHidden = false
+        SegInterestTable.isHidden = true
 
            }
 
