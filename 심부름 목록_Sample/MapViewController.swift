@@ -55,6 +55,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         //심부름6
         setAnnotation(latitude: 37.5892274, longitude: 127.02849170000002, delta: 1, title: "개운사", subtitle: "서울 성북구 안암동 157-3", task: "별 일:", detail: "개운사에서 불공드리기")
         
+        //아눅 샌드위치가 땡기네요     
+        //기숙사 올라오시는 분들 중 배달 가능하신 분~~~
         //축척을 위해
         let latitude:CLLocationDegrees = 37.5907990//insert latitutde
         
